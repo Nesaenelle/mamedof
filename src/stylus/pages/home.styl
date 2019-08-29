@@ -4,139 +4,195 @@ $slideOffsetTablet = 80px
 
 .home-page 
 	padding-top: 0
-	.main-slider
-		position: relative
-		height: calc(100vh - 112px)
-		overflow: hidden
-		margin-top: 112px
-		@media mqBigMobile
-			height: auto
-			margin-top: 95px
-		@media mqMidMobile
-			margin-top: 80px
-		&__slide
-			height: 100%
-			width: 100%
-			position: absolute
-			left: 0
-			top: 0
-			transition: 0.5s ease-in-out
-			animation: slidein 1s ease-in-out
-			visibility: hidden
-			animation-fill-mode: both
-			box-shadow: 0 0 20px 0px #000
+	// .main-slider
+	// 	position: relative
+	// 	height: calc(100vh - 112px)
+	// 	overflow: hidden
+	// 	margin-top: 112px
+	// 	@media mqBigMobile
+	// 		height: auto
+	// 		margin-top: 95px
+	// 	@media mqMidMobile
+	// 		margin-top: 80px
+	// 	&__slide
+	// 		height: 100%
+	// 		width: 100%
+	// 		position: absolute
+	// 		left: 0
+	// 		top: 0
+	// 		transition: 0.5s ease-in-out
+	// 		animation: slidein 1s ease-in-out
+	// 		visibility: hidden
+	// 		animation-fill-mode: both
+	// 		box-shadow: 0 0 20px 0px #000
 			
-			@media mqBigMobile
-				height: calc(100vh)
-				position: relative
-				animation: none
-				opacity: 1
-				visibility: visible
-				left: auto!important
-				top: auto!important
-				transition: none
-			@media mqMidMobile
-				height: calc(100vh - 80px)
-			&:nth-child(1)
-				// background: url(../img/slide1.png)
-				background-size: cover
-				background-position: center top
+	// 		@media mqBigMobile
+	// 			height: calc(100vh)
+	// 			position: relative
+	// 			animation: none
+	// 			opacity: 1
+	// 			visibility: visible
+	// 			left: auto!important
+	// 			top: auto!important
+	// 			transition: none
+	// 		@media mqMidMobile
+	// 			height: calc(100vh - 80px)
+	// 		&:nth-child(1)
+	// 			// background: url(../img/slide1.png)
+	// 			background-size: cover
+	// 			background-position: center top
 				
-				z-index: 3
-				left: "calc(-100% + %s)" % $slideOffsetDesktop
-				@media mqBigMobile
-					display: none
-					height: calc(100vh - 100px)
-				@media mqBigTablet
-					left: "calc(-100% + %s)" % $slideOffsetTablet
-				&.active
-					left: "calc(-%s * 2)" % $slideOffsetDesktop
-					@media mqBigTablet
-						left: "calc(-%s * 2)" % $slideOffsetTablet
+	// 			z-index: 3
+	// 			left: "calc(-100% + %s)" % $slideOffsetDesktop
+	// 			@media mqBigMobile
+	// 				display: none
+	// 				height: calc(100vh - 100px)
+	// 			@media mqBigTablet
+	// 				left: "calc(-100% + %s)" % $slideOffsetTablet
+	// 			&.active
+	// 				left: "calc(-%s * 2)" % $slideOffsetDesktop
+	// 				@media mqBigTablet
+	// 					left: "calc(-%s * 2)" % $slideOffsetTablet
 			
-				animation-delay: 0s
-			&:nth-child(2)
-				// background: url(../img/slide2.png)
-				background-size: cover
-				background-position: center top
-				z-index: 2
-				left: -($slideOffsetDesktop)
-				display: flex
-				align-items: center
-				justify-content: center
-				@media mqBigTablet
-					left: -($slideOffsetTablet)
-				&.active
-					left: -($slideOffsetDesktop)
-					@media mqBigTablet
-						left: -($slideOffsetTablet)
-				&.inactive
-					left: "calc(-100% + %s * 2)" % $slideOffsetDesktop
-					@media mqBigTablet
-						left: "calc(-100% + %s * 2)" % $slideOffsetTablet
-				animation-delay: 0.5s
-			&:nth-child(3)
-				z-index: 1
+	// 			animation-delay: 0s
+	// 		&:nth-child(2)
+	// 			// background: url(../img/slide2.png)
+	// 			background-size: cover
+	// 			background-position: center top
+	// 			z-index: 2
+	// 			left: -($slideOffsetDesktop)
+	// 			display: flex
+	// 			align-items: center
+	// 			justify-content: center
+	// 			@media mqBigTablet
+	// 				left: -($slideOffsetTablet)
+	// 			&.active
+	// 				left: -($slideOffsetDesktop)
+	// 				@media mqBigTablet
+	// 					left: -($slideOffsetTablet)
+	// 			&.inactive
+	// 				left: "calc(-100% + %s * 2)" % $slideOffsetDesktop
+	// 				@media mqBigTablet
+	// 					left: "calc(-100% + %s * 2)" % $slideOffsetTablet
+	// 			animation-delay: 0.5s
+	// 		&:nth-child(3)
+	// 			z-index: 1
+	// 			left: 0
+	// 			background: #d0d0d0
+	// 			left: $slideOffsetDesktop
+	// 			.world-map
+	// 				opacity: 0;
+	// 				@media mqBigMobile
+	// 					opacity: 1
+	// 			@media mqBigTablet
+	// 				left: $slideOffsetTablet
+	// 			&.active
+	// 				left: 0
+	// 				.world-map 
+	// 					opacity: 1
+	// 			animation-delay: 1s
+	.title
+		font-size: 40px
+		position: relative
+
+	.company
+		padding: 0 0 50px 0
+		background: #ccc
+		.title 
+			&:after 
+				content: ''
+				background: $c-blue
+				height: 2px
+				width: 300px
+				margin: 10px 0 20px 0
 				left: 0
-				background: #d0d0d0
-				left: $slideOffsetDesktop
-				.world-map
-					opacity: 0;
-					@media mqBigMobile
-						opacity: 1
-				@media mqBigTablet
-					left: $slideOffsetTablet
-				&.active
-					left: 0
-					.world-map 
-						opacity: 1
-				animation-delay: 1s
-				
+				display: block
+		.container
+			display: flex
+		&__left
+			width: 50%
+			padding: 25px
+			background: $c-white
+		&__right
+			width: 50%
 
-	.text-block	
-		position: relative
-		// margin: 81px 228px 0px 228px
-		// @media mqBigTablet
-		// 	margin: 81px 120px 0px 120px
-		// @media mqSmallTablet
-		// 	margin: 70px 70px 0px 70px
-		// @media mqBigMobile
-		// 	margin: 60px 50px 0px 50px
-		// @media mqMidMobile
-		// 	margin: 50px 30px 0px 30px
-		// @media mqSmallMobile
-		// 	margin: 30px 15px 0px 15px
-		// &:after
-		// 	content: ''
-		// 	position: absolute
-		// 	left: -30px
-		// 	top: 10px
-		// 	width: 5px;
-		// 	height: calc(100% - 15px)
-		// 	background: $c-border-red
-		// 	@media mqMidMobile
-		// 		width: 3px
-		// 		left: -20px
+	.services
+		background: #1A1A1A
+		padding: 30px 0
+		box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8)
+		.title
+			color: $c-white
+		.show-more
+			color: $c-white
+			margin: auto
+		&__list
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			&__item
+				width: calc(100%/3 - 20px)
+				margin-top: 30px
+				background: #1A1A1A
+				box-shadow: 0px 0px 20px #000000
+				padding: 20px
+				&--title
+					color: $c-white
+					font-weight: 500
+					font-size: 16px
+				&--text
+					margin-top: 15px
+					font-size: 12px
+					color: $c-white
+				&--link
+					margin-top: 15px
+					color: $c-white
+	.investment
+		padding: 50px 0
 
-		&--title
-			font-size: 36px
-			font-weight: 600
-			width: 800px
-			@media mqBigTablet
-				font-size: 30px
-			@media mqBigMobile
-				width: 100%
-				font-size: 26px
-			@media mqMidMobile
-				font-size: 22px
-			@media mqSmallMobile
-				font-size: 18px
-		&--descr 
-			font-size: 16px
-			line-height: 1.65em
-			margin-top: 20px
-			@media mqMidMobile
-				font-size: 14px
+	// .text-block	
+	// 	position: relative
+	// 	// margin: 81px 228px 0px 228px
+	// 	// @media mqBigTablet
+	// 	// 	margin: 81px 120px 0px 120px
+	// 	// @media mqSmallTablet
+	// 	// 	margin: 70px 70px 0px 70px
+	// 	// @media mqBigMobile
+	// 	// 	margin: 60px 50px 0px 50px
+	// 	// @media mqMidMobile
+	// 	// 	margin: 50px 30px 0px 30px
+	// 	// @media mqSmallMobile
+	// 	// 	margin: 30px 15px 0px 15px
+	// 	// &:after
+	// 	// 	content: ''
+	// 	// 	position: absolute
+	// 	// 	left: -30px
+	// 	// 	top: 10px
+	// 	// 	width: 5px;
+	// 	// 	height: calc(100% - 15px)
+	// 	// 	background: $c-border-red
+	// 	// 	@media mqMidMobile
+	// 	// 		width: 3px
+	// 	// 		left: -20px
+
+	// 	&--title
+	// 		font-size: 36px
+	// 		font-weight: 600
+	// 		width: 800px
+	// 		@media mqBigTablet
+	// 			font-size: 30px
+	// 		@media mqBigMobile
+	// 			width: 100%
+	// 			font-size: 26px
+	// 		@media mqMidMobile
+	// 			font-size: 22px
+	// 		@media mqSmallMobile
+	// 			font-size: 18px
+	// 	&--descr 
+	// 		font-size: 16px
+	// 		line-height: 1.65em
+	// 		margin-top: 20px
+	// 		@media mqMidMobile
+	// 			font-size: 14px
 
 @keyframes slidein {
   from {

@@ -2,61 +2,63 @@ extends ../layout.pug
 
 block content
 	
-	//- .main-
-	//- .main-slider
-	//- 	.main-slider__slide.active(data-slide-id="1")
-	//- 		.banner-block
-	//- 			.banner-block--title LIMITLESS FREE TRAINER
-	//- 			.banner-block--text Не следует, однако забывать, что новая модель организационной деятельности позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач.
-	//- 			a(class="banner-block--link" href="") узнай больше
-	//- 				svg
-	//- 					use(xlink:href="#icon-right-arrow")
-	//- 	.main-slider__slide(data-slide-id="2")
-	//- 		.search-block
-	//- 			a(href="search.html" class="search-block__link") Кардио оборудование
-	//- 			a(href="search.html" class="search-block__link") Зона свободных весов
-	//- 			.search-block__input
-	//- 				//- img(src="img/search.svg", alt="" class="search-input__img")
-	//- 				input(type="text" data-placeholder="Что вы ищите?" )
-	//- 			a(href="search.html" class="search-block__link") Профессиональные тренажеры
-	//- 			a(href="search.html" class="search-block__link") Силовое оборудование
-	//- 	.main-slider__slide(data-slide-id="3")
-			//- .world-map
-			//- 	.world-map--img
-			//- 		include ../parts/world-map.html
-			//- 		include ../parts/europe-map.html
-			//- 		include ../parts/asian-map.html
-			//- 		include ../parts/africa-map.html
-			//- 	.world-map__list
-			//- 		.world-map__list__item.back(data-region-id="back") Вернуться назад
-			//- 		each val in [{name: 'Европа', id: 'europe'}, {name: 'Азиатско-Тихоокеанский регион', id: 'asian'}, {name: 'Африка', id: 'africa'}]
-			//- 			.world-map__list__item.region(data-region-id=val.id)= val.name
-			//- 		.world-map__list__item.world-map__list__item__dropdown(data-dropdown)
-			//- 			.world-map__list__item__dropdown--value(data-dropdown-value) Выберете вашу страну
-			//- 			.world-map__list__item__dropdown__list
-			//- 				//- each val in [{title: 'Albania', id: 'AL'}, {title: 'Austria', id: 'AT'}, {title:'Belarus', id: 'BY'}, {title: 'Belgium', id: 'BE'},{title: 'Bulgaria', id: 'BG'}, {title: 'Croatia', id: 'HR'}, {title: 'Cyprus', id: 'CY'}, {title: 'Czech Republic', id: 'CZ'}, {title: 'Denmark', id: 'DK'},{title: 'Estonia', id: 'EE'},{title: 'Faroe Islands', id: 'FO'}, {title: 'Finland', id: 'FI'},{title: 'France', id: 'FR'}, {title: 'Georgia', id: 'GE'}, {title: 'Germany', id: 'DE'},{title: 'Greece', id: 'GR'}, {title: 'Hungary', id: 'HU'},{title: 'Iceland', id: 'IS'},{title: 'Ireland', id: 'IE'}, {title: 'Italy', id: 'IT'}, {title: 'Latvia', id: 'LV'}, {title: 'Lithuania', id: 'LT'}, {title: 'Luxembourg', id: 'LU'},{title: 'Macedonia', id: 'MK'}, {title: 'Moldova', id: 'MD'},{title: 'Montenegro', id: 'ME'},{title: 'Netherlands', id: 'NL'},{title: 'Norway', id: 'NO'},{title: 'Poland', id: 'PL'},{title: 'Portugal', id: 'PT'}, {title: 'Romania', id: 'RO'},{title: 'Russia', id: 'RU'},{title: 'Serbia', id: 'RS'},{title: 'Slovakia', id: 'SK'},{title: 'Slovenia', id: 'SI'},{title: 'Spain', id: 'ES'},{title: 'Sweden', id: 'SE'},{title: 'Switzerland', id: 'CH'},{title: 'Turkey', id: 'TR'}, {title: 'Ukraine', id: 'UA'}, {title: 'United Kingdom', id: 'GB'}]
-			//- 				//- 	a(href="" class="world-map__list__item__dropdown__list--item" data-country-id=val.id)= val.title
+	section.main-slider
+		.main-slider__slide.active(data-slide-id="1")
+			//- .banner-block
+			//- 	.banner-block--title LIMITLESS FREE TRAINER
+			//- 	.banner-block--text Не следует, однако забывать, что новая модель организационной деятельности позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач.
+			//- 	a(class="banner-block--link" href="") узнай больше
+			//- 		svg
+			//- 			use(xlink:href="#icon-right-arrow")
 
-	.container
-		.text-block 
-			.text-block--title О компании
-			.text-block--descr Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах.
-		
-	//- .grid
-	//- 	div
-	//- 		.grid__item.grid-2-1
-	//- 			//- a(href="")
-	//- 			img(src="img/doneforbuisness.png", alt="")
-	//- 			a(href="" class="grid__item--text") Готовые решния для бизнеса
-	//- 	div
-	//- 		.grid__item.grid-4-4
-	//- 			img(src="img/cardiozone.png", alt="")
-	//- 			a(href="" class="grid__item--text") кардио зона
-	//- 		.grid__item.grid-4-4
-	//- 			img(src="img/training.png", alt="")
-	//- 			a(href="" class="grid__item--text") тренажеры
-	//- 		.grid__item.grid-2-4
-	//- 			img(src="img/freeweight.png", alt="")
-	//- 			a(href="" class="grid__item--text") Свободные веса
+	section.company
+		.container
+			.company__left
+				.title О компании
+				.text-block--descr Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах.
+			.company__right
+				img(src="img/photo.jpg", alt="")
+
+	section.services
+		.container
+			.title Какие услуги мы предоставляем
+
+			.services__list
+				.services__list__item
+					.services__list__item--title Продажа бизнеса
+					.services__list__item--text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+					.services__list__item--link Подробнее
+				.services__list__item
+					.services__list__item--title Анализ рентабельности бизнес проектов
+					.services__list__item--text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+					.services__list__item--link Подробнее
+				.services__list__item
+					.services__list__item--title Акселерация стартап-проектов
+					.services__list__item--text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+					.services__list__item--link Подробнее
+				.services__list__item
+					.services__list__item--title Привличение инвестиций в бизнес
+					.services__list__item--text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+					.services__list__item--link Подробнее
+				.services__list__item
+					.services__list__item--title Юридическое сопровождение
+					.services__list__item--text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+					.services__list__item--link Подробнее
+				.services__list__item
+					.services__list__item--title Составление бизнес планов и ТЭО
+					.services__list__item--text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+					.services__list__item--link Подробнее
+			.show-more показать еще
+
+			img(src="img/lion_head_skulpture.png", alt="")
+			div “Жизнь — это игра, а деньги — способ вести счет”
+			div Тед Тёрнер
+
+			button.btn.btn--gold Привлечь инвестиции
+
+	section.investment
+		.container
+			.title Наши инвестиционные проекты
+
 
 	include ../parts/bottom-block.pug
