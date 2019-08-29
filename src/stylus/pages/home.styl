@@ -4,104 +4,58 @@ $slideOffsetTablet = 80px
 
 .home-page 
 	padding-top: 0
-	// .main-slider
-	// 	position: relative
-	// 	height: calc(100vh - 112px)
-	// 	overflow: hidden
-	// 	margin-top: 112px
-	// 	@media mqBigMobile
-	// 		height: auto
-	// 		margin-top: 95px
-	// 	@media mqMidMobile
-	// 		margin-top: 80px
-	// 	&__slide
-	// 		height: 100%
-	// 		width: 100%
-	// 		position: absolute
-	// 		left: 0
-	// 		top: 0
-	// 		transition: 0.5s ease-in-out
-	// 		animation: slidein 1s ease-in-out
-	// 		visibility: hidden
-	// 		animation-fill-mode: both
-	// 		box-shadow: 0 0 20px 0px #000
-			
-	// 		@media mqBigMobile
-	// 			height: calc(100vh)
-	// 			position: relative
-	// 			animation: none
-	// 			opacity: 1
-	// 			visibility: visible
-	// 			left: auto!important
-	// 			top: auto!important
-	// 			transition: none
-	// 		@media mqMidMobile
-	// 			height: calc(100vh - 80px)
-	// 		&:nth-child(1)
-	// 			// background: url(../img/slide1.png)
-	// 			background-size: cover
-	// 			background-position: center top
-				
-	// 			z-index: 3
-	// 			left: "calc(-100% + %s)" % $slideOffsetDesktop
-	// 			@media mqBigMobile
-	// 				display: none
-	// 				height: calc(100vh - 100px)
-	// 			@media mqBigTablet
-	// 				left: "calc(-100% + %s)" % $slideOffsetTablet
-	// 			&.active
-	// 				left: "calc(-%s * 2)" % $slideOffsetDesktop
-	// 				@media mqBigTablet
-	// 					left: "calc(-%s * 2)" % $slideOffsetTablet
-			
-	// 			animation-delay: 0s
-	// 		&:nth-child(2)
-	// 			// background: url(../img/slide2.png)
-	// 			background-size: cover
-	// 			background-position: center top
-	// 			z-index: 2
-	// 			left: -($slideOffsetDesktop)
-	// 			display: flex
-	// 			align-items: center
-	// 			justify-content: center
-	// 			@media mqBigTablet
-	// 				left: -($slideOffsetTablet)
-	// 			&.active
-	// 				left: -($slideOffsetDesktop)
-	// 				@media mqBigTablet
-	// 					left: -($slideOffsetTablet)
-	// 			&.inactive
-	// 				left: "calc(-100% + %s * 2)" % $slideOffsetDesktop
-	// 				@media mqBigTablet
-	// 					left: "calc(-100% + %s * 2)" % $slideOffsetTablet
-	// 			animation-delay: 0.5s
-	// 		&:nth-child(3)
-	// 			z-index: 1
-	// 			left: 0
-	// 			background: #d0d0d0
-	// 			left: $slideOffsetDesktop
-	// 			.world-map
-	// 				opacity: 0;
-	// 				@media mqBigMobile
-	// 					opacity: 1
-	// 			@media mqBigTablet
-	// 				left: $slideOffsetTablet
-	// 			&.active
-	// 				left: 0
-	// 				.world-map 
-	// 					opacity: 1
-	// 			animation-delay: 1s
+	.main-slider
+		position: relative
+		&__title
+			color: $c-white
+			width: 50%
+			font-size: 40px
+			font-weight: 600
+			line-height: 52px
+			font-family: IBM Plex Serif
+		&__text
+			color: $c-white
+			font-size: 20px
+			line-height: 24px
+			margin-top: 20px
+			width: 50%
+		.btn
+			margin-top: 20px
+		&__container
+			position: absolute
+			z-index: 2
+			top:0
+			left: 0
+			width: 100%
+			height: 100%
+			display: flex
+			align-items: center
+		.slider
+			.slick-slide
+				height: 496px
+				img
+					width: 100%
+					height: 100%
+					object-fit: none
 	.title
 		font-size: 40px
 		position: relative
+		font-weight: 600
+		display: flex
+		align-items: center
+		justify-content: space-between
+		a 
+			font-size: 16px
+			color: $c-gold
 
 	.company
 		padding: 0 0 50px 0
 		background: #ccc
 		.title 
+			flex-wrap: wrap
 			&:after 
 				content: ''
-				background: $c-blue
+				background: radial-gradient(29.14px at 56.81% 48.17%, #F9E7B8 0%, #BE9142 100%);
 				height: 2px
 				width: 300px
 				margin: 10px 0 20px 0
@@ -122,9 +76,7 @@ $slideOffsetTablet = 80px
 		box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8)
 		.title
 			color: $c-white
-		.show-more
-			color: $c-white
-			margin: auto
+
 		&__list
 			display: flex
 			justify-content: space-between
@@ -135,6 +87,13 @@ $slideOffsetTablet = 80px
 				background: #1A1A1A
 				box-shadow: 0px 0px 20px #000000
 				padding: 20px
+				
+				&--wrapper
+					padding: 20px
+					content: ''
+					border: 1px solid #ccc
+					position: relative
+					display: block
 				&--title
 					color: $c-white
 					font-weight: 500
@@ -143,12 +102,109 @@ $slideOffsetTablet = 80px
 					margin-top: 15px
 					font-size: 12px
 					color: $c-white
+					margin-bottom: 50px
 				&--link
 					margin-top: 15px
 					color: $c-white
+					width: 50%
+					border-left: 1px solid #ccc
+					border-top: 1px solid #ccc
+					position: absolute
+					right: 0
+					bottom: 0
+					padding: 20px 30px
+				img
+					position: absolute
+					background: #1a1a1a
+					z-index: 1
+					padding: 0 7px
+					bottom: -10px
+					left: 5px
+
+		.show-more
+			color: $c-white
+			margin: 15px auto 0
+			width: 150px
+			text-align: center
+		&__bottom
+			display: flex
+			margin-top: 50px
+			&--title
+				font-family: IBM Plex Serif
+				font-style: normal
+				font-weight: 600
+				font-size: 40px
+				line-height: 52px
+				color: $c-white
+			&--text
+				font-size: 20px
+				line-height: 24px
+				color: $c-white
+
 	.investment
 		padding: 50px 0
+		&__list
+			display: flex
+			justify-content: space-between
+			margin-top: 50px
+			&__item
+				background: $c-white
+				box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15)
+				padding: 20px
+				width: calc(100%/3 - 20px)
+				text-align: center
+				position: relative
+				&--line
+					border: 2px solid $c-gold
+					position: absolute
+					height: 50px
+					width: calc(100% - 40px)
+					margin: 15px auto
+					left: 20px
+					top: -30px
+				&--title
+					text-align: center
+					color: #1A1A1A
+					font-weight: 600
+					font-size: 20px
+					line-height: 24px
+					position: relative
+					background: $c-white
+					display: inline-block
+					padding: 0 16px
+					&:after
+						content: ''
+						background: $c-gold
+						height: 2px
+						width: 70px
+						margin: 15px auto
+						left: 0
+						display: block
+				&--text
+					font-size: 12px
+					line-height: 15px
+					text-align: left
+				&--price
+					text-align: center
+					font-size: 30px
+					margin-top: 20px
+					font-family: IBM Plex Serif
+					font-style: normal
+					font-weight: 600
 
+					b
+						background: radial-gradient(29.14px at 56.81% 48.17%, #F9E7B8 0%, #BE9142 100%)
+						-webkit-background-clip: text
+						-webkit-text-fill-color: transparent
+					small
+						font-size: 16px
+						margin: 0 5px
+						&:last-child
+							font-size: 14px
+							display: block
+							color: #ccc
+				.btn
+					margin: 30px auto 0
 	// .text-block	
 	// 	position: relative
 	// 	// margin: 81px 228px 0px 228px

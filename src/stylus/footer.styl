@@ -1,15 +1,8 @@
 footer 
 	background: #1A1A1A
-	// height: 270px
 	padding: 67px 0 50px 0
 	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8)
-	// @media mqBigTablet
-	// 	display: none
-	// &.hidden
-	// 	display: none
-		
-	// @media mqMidTablet
-		// padding: 30px 0
+
 	.container
 		// max-width: 100%
 		display: flex
@@ -27,32 +20,27 @@ footer
 			display flex
 			width: 100%
 			flex-wrap: wrap
-		
-	// .left
-	// 	width: 45%
-	// 	display: flex
-	// 	& > div:first-child
-	// 		@media mqSmallDesktop
-	// 			display: flex
-	// 	@media mqSmallDesktop
-	// 		width: 100%
-	// 	@media mqSmallTablet
-	// 		justify-content: space-between
-	// 	@media mqBigMobile
-	// 		display: block
+		& + .container
+			margin-top: 20px
+			// justify-content: space-between
+		.email,.phone,.address
+			display flex
+			align-items: center
+			flex-wrap: nowrap
+			img 
+				margin-right: 5px
+		.socials
+			justify-content: flex-end
+			img 
+				margin-left: 5px
+
 	ul 
 		margin-top: 0px
 		width: 100%
 		display: inline-block
 		vertical-align: top
 		display flex
-		// @media mqSmallDesktop
-		// 	margin: 0 20px
-		// @media mqSmallTablet
-		// 	display: none
-		// & + ul 
-		// 	width: 45%
-		// 	margin-left: 10px
+
 		li
 			margin: 8px 0
 			a
@@ -61,20 +49,7 @@ footer
 				font-size: 14px
 				&:hover
 					text-decoration: underline
-		// .address
-		// 	margin-left: 58px
-		// 	font-weight: 300
-		// 	line-height: 2em
-		// 	font-size: 14px
-		// 	margin-top: 7px
-		// 	letter-spacing: 0.8px
-		// 	@media mqSmallDesktop
-		// 		margin: 0
-		// 	@media mqMidTablet
-		// 		font-size: 12px
-		// 		line-height: 1.7em
-		// 	@media mqBigMobile
-		// 		text-align: center
+
 	// .right
 	// 	width: 55%
 	// 	display: flex

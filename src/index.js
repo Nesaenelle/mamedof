@@ -1,9 +1,9 @@
 import './stylus/style.styl'
-// import $ from 'jquery'
+import $ from 'jquery'
 // import './animate'
 // import './jquery.magnify.js'
 // import Typed from 'typed.js';
-// import 'slick-carousel';
+import 'slick-carousel';
 
 // require('webpack-jquery-ui/slider');
 
@@ -777,13 +777,13 @@ import './stylus/style.styl'
 
 
 
-// $('.example-slider').slick({
-//   infinite: true,
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   arrows: true,
-//   dots: true
-// });
+$('.main-slider .slider').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  dots: false
+});
 
 // $('.example-slider .slick-slide').on('click', function() {
 //     // if($('header').hasClass('hidden')) {
