@@ -1,0 +1,13 @@
+.catalog__filter-switcher.btn.btn--blue ФИЛЬТР
+
+.catalog__goods__sort
+	each val in [{name: 'Сортировка:', val: 'От дорогих'}, {name: 'Категория:', val: 'Выбрать'}, {name: 'Рекоммендованные:', val: 'Выбрать'}, {name: 'По названию:', val: 'Выбрать'}, {name: 'По зоне размещения: ', val: 'Выбрать'}]
+		div
+			.catalog__goods__sort__item(data-dropdown)
+				.catalog__goods__sort__item--title= val.name
+				.catalog__goods__sort__item--value(data-dropdown-value)= val.val
+				.catalog__goods__sort__item__dropdown
+					.catalog__goods__sort__item__dropdown--item(data-dropdown-item)= val.val + 1
+					.catalog__goods__sort__item__dropdown--item(data-dropdown-item)= val.val + 2
+					.catalog__goods__sort__item__dropdown--item(data-dropdown-item)= val.val + 3
+

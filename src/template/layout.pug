@@ -1,0 +1,81 @@
+doctype html
+head
+	title Global Fitness
+	link(rel="shortcut icon" href="/favicon.png")
+	meta(content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1.0, maximum-scale=1" name="viewport")
+	//- block head
+	//- script(src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.2/d3.min.js")
+	link(href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700,800&display=swap" rel="stylesheet")
+	link(href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:100,300,400,500,600,700&display=swap" rel="stylesheet")
+body
+	header(class=htmlWebpackPlugin.options.page + '-header')
+		.container
+			include parts/main-logo.pug
+
+			div +380 (63) 103 00 02
+			div info@mamedof.com
+
+			.language(data-dropdown)
+				.language__value(data-dropdown-value) RUS
+				.language__list
+					.language__list--item(data-dropdown-item) RUS
+					.language__list--item(data-dropdown-item) UA
+					.language__list--item(data-dropdown-item) EN
+
+		.container
+			include parts/main-menu.pug
+
+		//- .sub-header
+		//- 	.container
+		//- 		div
+					
+		//- 			a(href="catalog.html" class="sub-header__menu-item" data-type="products") Продукция
+					
+		//- 			a(href="" class="sub-header__menu-item" data-type="solutions") Готовые решения
+					
+		//- 			a(href="sell-out.html" class="sub-header__menu-item") Распродажа
+
+		//- 			include parts/main-logo.pug
+
+		//- 			include parts/products-menu.pug
+		//- 			include parts/solutions-menu.pug
+
+		//- 		div
+		//- 			include parts/sign-in-icon.pug
+		//- 			.search-input
+		//- 				input(type="text" placeholder="Поиск на сайте" maxlength="50")
+		//- 				img(src="img/search.svg", alt="" class="search-input__img")
+		//- 			include parts/favorite-icon.pug
+		//- 			a(class="cart" href="")
+		//- 				svg
+		//- 					use(xlink:href="#icon-cart")
+		//- 				.cart--value 1
+
+		//- 			.burger
+		//- 				span
+
+		//- 	.dropdown-menu
+		//- 		.dropdown-menu--title.active
+		//- 			span Продукция
+		//- 		include parts/products-menu.pug
+		//- 		.dropdown-menu--title 
+		//- 			span Готовые решения
+		//- 		include parts/solutions-menu.pug
+		//- 		.dropdown-menu--title.no-children
+		//- 			a(href="sell-out.html") Распродажа
+
+		//- 		include parts/socials.pug
+
+		//- 	include parts/socials.pug
+
+		//- 	include parts/mobile-menu.pug
+
+	main(class=htmlWebpackPlugin.options.page + '-page')
+		block content
+
+	include  parts/footer.pug
+
+	//- include parts/modals.pug
+
+	//- div(style="display: none")
+	//- 	include  sprite.svg

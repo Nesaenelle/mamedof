@@ -1,0 +1,190 @@
+@import 'reset.css'
+@import 'variables.styl'
+@import 'mixins.styl'
+@import 'controls.styl'
+@import 'header.styl'
+@import 'footer.styl'
+@import 'button.styl'
+@import 'pages/home.styl'
+// @import 'pages/about.styl'
+// @import 'pages/catalog.styl'
+// @import 'pages/examples.styl'
+// @import 'pages/traiding.styl'
+// @import 'pages/contacts.styl'
+// @import 'pages/leasing.styl'
+// @import 'pages/profile.styl'
+// @import 'pages/dealers.styl'
+// @import 'pages/not-found.styl'
+@import 'modal.styl'
+@import 'magnify.css'
+@import 'slick.css'
+
+body 
+	// font-family: 'Roboto', sans-serif
+	font-family: 'Montserrat', sans-serif
+	color: #1f1f1f
+input, button, textarea
+	// font-family: 'Roboto', sans-serif
+	font-family: 'Montserrat', sans-serif
+	
+
+main 
+	// min-height: calc(100vh - 265px)
+	// padding-top: calc(47px + 65px + 34px)
+	position: relative
+	overflow: hidden
+	
+	// @media mqBigMobile
+	// 	padding-top: calc(40px + 55px + 20px)
+	// @media mqMidMobile
+	// 	padding-top: calc(35px + 45px + 20px)
+		
+	// &:after
+	// 	transition: 0.5s
+	// 	content: ''
+	// 	position: fixed
+	// 	top: calc(47px + 65px)
+	// 	left: 0
+	// 	width: 100%
+	// 	box-shadow: 0 0 5px 1px #666
+	// 	height: 0px
+	// 	z-index: 4
+	// 	@media mqBigMobile
+	// 		top: calc(40px + 55px)
+	// 	@media mqMidMobile
+	// 		top: calc(35px + 45px)
+	
+.container 
+	max-width: 1620px
+	margin: auto
+	padding: 0 40px
+	@media mqBigMobile
+		padding: 0 20px
+		
+
+.title 
+	font-size: 24px
+	color: #666666
+	font-weight: 600
+	margin: 43px 0 0 0
+	position relative
+	@media mqBigMobile
+		margin: 30px 0 0 0
+		font-size: 20px
+	&:after 
+		content: ''
+		background: $c-blue
+		height: 2px
+		width: 48px
+		left: 0
+		bottom: -20px
+		position: absolute
+		@media mqBigMobile
+			bottom: -15px
+
+.breadcrumbs
+	&__item
+		font-size: 14px
+		// color: #fff
+		letter-spacing: .2px
+		display: inline-block
+		color: #0786ff
+		a {
+			color: #878787
+			text-decoration: underline
+		}
+		& + .breadcrumbs__item 
+			&:last-child 
+				&:before
+					color: #0786ff
+			&:before 
+				color: #878787
+				content: '|'
+				margin: 0 5px
+
+
+.bottom-block
+	padding: 39px 0 41px 0
+	margin-top: 50px
+	background: #1A1A1A
+	position relative
+	overflow: hidden
+	@media mqBigTablet
+		padding: 30px 30px
+	@media mqBigMobile
+		padding: 30px 30px
+	@media mqSmallMobile
+		padding: 20px
+	.container 
+		position relative
+		align-items: center
+	&__top
+		display flex
+		align-items: center
+		justify-content: space-between
+	&__title
+		color: #fff
+		font-family: IBM Plex Serif
+		font-style: normal
+		font-weight: 600
+		font-size: 40px
+		line-height: 52px
+	&__text
+		line-height: 20px
+		width: calc(100% - 300px)
+		margin-top: 20px
+		padding: 20px
+		background: #1A1A1A
+		color: #fff
+		font-size: 16px
+		box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8)
+	&__list
+		margin-top: 50px
+		display flex
+		justify-content: space-between
+		&__item
+			padding: 20px
+			box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8)
+			width: calc(100%/4 - 50px)
+			text-align: center
+			&--title
+				color: $c-white
+				font-size: 16px
+
+		
+
+
+// @font-face 
+// 	font-family: 'Harlow'
+// 	src url('./Harlow.ttf')
+// 	font-style: normal
+
+
+// @keyframes slideinRight {
+// 	from {
+// 		transform: translateX(100%)
+// 		opacity: 0
+// 		visibility: hidden
+// 	}
+
+// 	to {
+// 		transform: translateX(0)
+// 		opacity: 1
+// 		visibility: visible
+// 	}
+// }
+
+	
+// @keyframes slideinLeft {
+// 	from {
+// 		transform: translateX(-100%)
+// 		opacity: 0
+// 		visibility: hidden
+// 	}
+
+// 	to {
+// 		transform: translateX(0)
+// 		opacity: 1
+// 		visibility: visible
+// 	}
+// }

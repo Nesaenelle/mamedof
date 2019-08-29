@@ -1,0 +1,71 @@
+.modal--overlay
+.modal(data-modal-id="sign-in")
+	.modal--body
+		.modal--close(data-modal-close) X
+		.sign-in
+			.modal--title Вход в интернет-магазин
+			.modal--left
+				form.modal--form
+					label Эл. почта или телефон
+					input(type="email" required)
+
+					label Пароль
+					input(type="password" required)
+					.modal--link.modal--link-small Напомнить пароль
+
+					button(class="btn btn--blue" type="submit") Вход
+					button(class="btn btn--transparent" type="button" data-modal-close) Отмена
+	
+			.modal--right
+				.modal--socials
+					label Войти как пользователь
+					img(src="img/facebook.png", alt="")
+					img(src="img/google.png", alt="")
+				.modal--link(data-modal-button="sign-up") Зарегистрироваться
+
+.modal(data-modal-id="sign-up")
+	.modal--body
+		.modal--close(data-modal-close) X
+		.sign-up
+			.modal--title Регистрация
+			.modal--left
+				form.modal--form
+					label Ваше имя
+					input(type="text" required)
+
+					label Эл. почта или телефон
+					input(type="email" required)
+
+					label Придумайте пароль
+					input(type="password" required)
+					
+
+					label Пароль должен быть не менее 6 символов, содержать цифры и заглавные буквы и не должен совпадать с именем и эл.почтой
+
+					button(class="btn btn--blue" type="submit") Зарегистрироваться
+
+					label Регистрируясь, вы соглашаетесь с 
+					.modal--link.modal--link-small пользовательским соглашением
+
+			.modal--right
+				.modal--socials
+					label Войти как пользователь
+					img(src="img/facebook.png", alt="")
+					img(src="img/google.png", alt="")
+				.modal--link(data-modal-button="sign-in") Войти
+
+
+.modal(data-modal-id="contact-us")
+	.modal--body
+		.modal--close(data-modal-close) X
+
+		.modal--title Напишите нам
+
+		form.modal--form
+			label Ваше имя
+			input(type="text" required placeholder="Имя")
+
+			label Эл. почта или телефон
+			input(type="email" required placeholder="Телефон")
+
+			button(class="btn btn--blue" type="submit") Отправить
