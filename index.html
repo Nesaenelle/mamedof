@@ -43,11 +43,23 @@
           <div class="btn btn--gold"> 
             <button>Подробнее</button>
           </div>
+          <div class="main-slider__navigation">
+            <div class="main-slider__arrow">
+              <button class="main-slider__prev" type="button"></button>
+            </div>
+            <div class="main-slider__dots"></div>
+            <div class="main-slider__arrow">
+              <button class="main-slider__next" type="button"></button>
+            </div>
+          </div>
         </div>
       </div>
       <div class="slider">
-        <div class="main-slider__slide active" data-slide-id="1"><img src="img/slider-1.jpg" alt=""></div>
-        <div class="main-slider__slide active" data-slide-id="2"><img src="img/slider-1.jpg" alt=""></div>
+        <div class="main-slider__slide active"><img src="img/slider-1.jpg" alt=""></div>
+        <div class="main-slider__slide active"><img src="img/slider-1.jpg" alt=""></div>
+        <div class="main-slider__slide active"><img src="img/slider-1.jpg" alt=""></div>
+        <div class="main-slider__slide active"><img src="img/slider-1.jpg" alt=""></div>
+        <div class="main-slider__slide active"><img src="img/slider-1.jpg" alt=""></div>
       </div>
     </section>
     <section class="company">
@@ -56,11 +68,28 @@
           <div class="title">О компании</div>
           <div class="text-block--descr">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах.</div>
         </div>
-        <div class="company__right"><img src="img/photo.jpg" alt="">
-          <div>Роман Мамедоф</div>
-          <div>Основатель компании</div>
-          <div>рабочих мест создано</div>
-          <div>действующих проектов</div>
+        <div class="company__right">
+          <div class="company__owner">
+            <div class="company__owner__photo"><img src="img/photo.jpg" alt=""></div>
+            <div class="company__owner__name">Роман Мамедоф</div>
+            <div class="company__owner__position">Основатель компании</div>
+          </div>
+          <div class="company__stats">
+            <div class="company__stats__item">
+              <div class="triangle">
+                <div></div>
+              </div>
+              <div class="company__stats__item--value">870+</div>
+              <div class="company__stats__item--title">рабочих мест создано</div>
+            </div>
+            <div class="company__stats__item"> 
+              <div class="triangle">
+                <div></div>
+              </div>
+              <div class="company__stats__item--value">110+</div>
+              <div class="company__stats__item--title">действующих проектов</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -70,46 +99,61 @@
         <div class="services__list">
           <div class="services__list__item">
             <div class="services__list__item--wrapper">
-              <div class="services__list__item--title">Продажа бизнеса</div>
-              <div class="services__list__item--text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</div><a class="services__list__item--link" href="">Подробнее</a><img src="img/icons/Vector-5.svg" alt="">
+              <div class="services__list__item--inner">
+                <div class="services__list__item--title">Продажа бизнеса</div>
+                <div class="services__list__item--text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</div><a class="services__list__item--link" href="">Подробнее</a><img src="img/icons/Vector-5.svg" alt="">
+              </div>
             </div>
           </div>
           <div class="services__list__item">
             <div class="services__list__item--wrapper">
-              <div class="services__list__item--title">Анализ рентабельности бизнес проектов</div>
-              <div class="services__list__item--text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</div><a class="services__list__item--link" href="">Подробнее</a><img src="img/icons/Vector.svg" alt="">
+              <div class="services__list__item--inner">
+                <div class="services__list__item--title">Анализ рентабельности бизнес проектов</div>
+                <div class="services__list__item--text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</div><a class="services__list__item--link" href="">Подробнее</a><img src="img/icons/Vector.svg" alt="">
+              </div>
             </div>
           </div>
           <div class="services__list__item">
             <div class="services__list__item--wrapper">
-              <div class="services__list__item--title">Акселерация стартап-проектов</div>
-              <div class="services__list__item--text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</div><a class="services__list__item--link" href="">Подробнее</a><img src="img/icons/Vector-1.svg" alt="">
+              <div class="services__list__item--inner">
+                <div class="services__list__item--title">Акселерация стартап-проектов</div>
+                <div class="services__list__item--text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</div><a class="services__list__item--link" href="">Подробнее</a><img src="img/icons/Vector-1.svg" alt="">
+              </div>
             </div>
           </div>
           <div class="services__list__item">
             <div class="services__list__item--wrapper">
-              <div class="services__list__item--title">Привличение инвестиций в бизнес</div>
-              <div class="services__list__item--text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</div><a class="services__list__item--link" href="">Подробнее</a><img src="img/icons/Vector-2.svg" alt="">
+              <div class="services__list__item--inner">
+                <div class="services__list__item--title">Привличение инвестиций в бизнес</div>
+                <div class="services__list__item--text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</div><a class="services__list__item--link" href="">Подробнее</a><img src="img/icons/Vector-2.svg" alt="">
+              </div>
             </div>
           </div>
           <div class="services__list__item">
             <div class="services__list__item--wrapper">
-              <div class="services__list__item--title">Юридическое сопровождение</div>
-              <div class="services__list__item--text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</div><a class="services__list__item--link" href="">Подробнее</a><img src="img/icons/Vector-3.svg" alt="">
+              <div class="services__list__item--inner">
+                <div class="services__list__item--title">Юридическое сопровождение</div>
+                <div class="services__list__item--text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</div><a class="services__list__item--link" href="">Подробнее</a><img src="img/icons/Vector-3.svg" alt="">
+              </div>
             </div>
           </div>
           <div class="services__list__item">
             <div class="services__list__item--wrapper">
-              <div class="services__list__item--title">Составление бизнес планов и ТЭО</div>
-              <div class="services__list__item--text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</div><a class="services__list__item--link" href="">Подробнее</a><img src="img/icons/Vector-4.svg" alt="">
+              <div class="services__list__item--inner">
+                <div class="services__list__item--title">Составление бизнес планов и ТЭО</div>
+                <div class="services__list__item--text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</div><a class="services__list__item--link" href="">Подробнее</a><img src="img/icons/Vector-4.svg" alt="">
+              </div>
             </div>
           </div>
         </div>
-        <div class="show-more">показать еще</div>
-        <div class="services__bottom"><img src="img/lion_head_skulpture.png" alt="">
+        <div class="show-more">
+           показать еще</div>
+        <div class="services__bottom">
+          <div><img src="img/lion.svg" alt=""></div>
           <div>
-            <div class="services__bottom--title">“Жизнь — это игра, а деньги — способ вести счет”</div>
-            <div class="services__bottom--text">Тед Тёрнер</div>
+            <div class="services__bottom--title">
+               “Жизнь — это игра, <br>а деньги — способ вести счет”</div>
+            <div class="services__bottom--text">Тед Тёрнер</div><br>
             <div class="btn btn--gold"> 
               <button>Привлечь инвестиции</button>
             </div>
@@ -126,8 +170,10 @@
             <div class="investment__list__item--line"></div>
             <div class="investment__list__item--title">Название проекта</div>
             <div class="investment__list__item--text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</div>
-            <div class="investment__list__item--price"> <small> <b>от</b></small><b>20 000</b><small> <b>у.е.</b></small>
-              <div><small>стоимость входа</small></div>
+            <div class="investment__list__item--price"> 
+              <div> <small> <b>от</b></small><b>20 000</b><small> <b>у.е.</b></small>
+                <div><small>стоимость входа</small></div>
+              </div>
             </div>
             <div class="btn btn--gold">
               <button>Инвестировать</button>
@@ -137,8 +183,10 @@
             <div class="investment__list__item--line"></div>
             <div class="investment__list__item--title">Название проекта</div>
             <div class="investment__list__item--text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</div>
-            <div class="investment__list__item--price"> <small> <b>от</b></small><b>20 000</b><small> <b>у.е.</b></small>
-              <div><small>стоимость входа</small></div>
+            <div class="investment__list__item--price"> 
+              <div> <small> <b>от</b></small><b>20 000</b><small> <b>у.е.</b></small>
+                <div><small>стоимость входа</small></div>
+              </div>
             </div>
             <div class="btn btn--gold">
               <button>Инвестировать</button>
@@ -148,16 +196,106 @@
             <div class="investment__list__item--line"></div>
             <div class="investment__list__item--title">Название проекта</div>
             <div class="investment__list__item--text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</div>
-            <div class="investment__list__item--price"> <small> <b>от</b></small><b>20 000</b><small> <b>у.е.</b></small>
-              <div><small>стоимость входа</small></div>
+            <div class="investment__list__item--price"> 
+              <div> <small> <b>от</b></small><b>20 000</b><small> <b>у.е.</b></small>
+                <div><small>стоимость входа</small></div>
+              </div>
             </div>
             <div class="btn btn--gold">
               <button>Инвестировать</button>
             </div>
           </div>
         </div>
-        <div class="title">Новости</div>
+        <div class="title title--border">Новости
+          <ul>
+            <li class="active">Финансы</li>
+            <li>Личностный рост</li>
+            <li>Компании</li>
+            <li>Бизнес интервью</li>
+            <li>Наши проекты</li>
+          </ul>
+        </div>
+        <div class="news">
+          <div>
+            <div class="services__list">
+              <div class="services__list__item">
+                <div class="services__list__item--title">Заголовок новости</div>
+                <div class="services__list__item--wrapper">
+                  <div class="services__list__item--inner">
+                    <div class="services__list__item--text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века...</div><a class="services__list__item--link" href="">Читать больше</a>
+                    <div class="services__list__item--date">20.08.19</div>
+                  </div>
+                </div>
+              </div>
+              <div class="services__list__item">
+                <div class="services__list__item--title">Заголовок новости</div>
+                <div class="services__list__item--wrapper">
+                  <div class="services__list__item--inner">
+                    <div class="services__list__item--text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века...</div><a class="services__list__item--link" href="">Читать больше</a>
+                    <div class="services__list__item--date">20.08.19</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn btn--gold">
+              <button>Смотреть все новости</button>
+            </div>
+          </div>
+          <div><img src="img/news.jpg" alt=""></div>
+        </div>
         <div class="title">Наши партнеры</div>
+        <div class="partners-slider">
+          <div class="main-slider__navigation">
+            <div class="main-slider__arrow">
+              <button class="main-slider__prev" type="button"></button>
+            </div>
+            <div class="main-slider__arrow">
+              <button class="main-slider__next" type="button"></button>
+            </div>
+          </div>
+          <div class="slider">
+            <div>
+              <div class="partners-slider--top"></div>
+              <div class="partners-slider--img"><img src="img/partners/minfin_logo.png" alt=""></div>
+              <div class="partners-slider--bottom"></div>
+            </div>
+            <div>
+              <div class="partners-slider--top"></div>
+              <div class="partners-slider--img"><img src="img/partners/finline_logo.png" alt=""></div>
+              <div class="partners-slider--bottom"></div>
+            </div>
+            <div>
+              <div class="partners-slider--top"></div>
+              <div class="partners-slider--img"><img src="img/partners/logo_garnet.png" alt=""></div>
+              <div class="partners-slider--bottom"></div>
+            </div>
+            <div>
+              <div class="partners-slider--top"></div>
+              <div class="partners-slider--img"><img src="img/partners/logo-main.png" alt=""></div>
+              <div class="partners-slider--bottom"></div>
+            </div>
+            <div>
+              <div class="partners-slider--top"></div>
+              <div class="partners-slider--img"><img src="img/partners/odessa.png" alt=""></div>
+              <div class="partners-slider--bottom"></div>
+            </div>
+            <div>
+              <div class="partners-slider--top"></div>
+              <div class="partners-slider--img"><img src="img/partners/head_logo.png" alt=""></div>
+              <div class="partners-slider--bottom"></div>
+            </div>
+            <div>
+              <div class="partners-slider--top"></div>
+              <div class="partners-slider--img"><img src="img/partners/head_logo.png" alt=""></div>
+              <div class="partners-slider--bottom"></div>
+            </div>
+            <div>
+              <div class="partners-slider--top"></div>
+              <div class="partners-slider--img"><img src="img/partners/head_logo.png" alt=""></div>
+              <div class="partners-slider--bottom"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 <div class="bottom-block">
@@ -170,16 +308,34 @@
       </div>
     </div>
     <div class="bottom-block__list">
-      <div class="bottom-block__list__item"><img src="img/icons/Vector-5.svg" alt="">
+      <div class="bottom-block__list--top"></div>
+      <div class="bottom-block__list--bottom"></div>
+      <div class="bottom-block__list__item">
+        <div class="bottom-block__list__item--img">
+          <div class="bottom-block__list__item--top"></div>
+          <div class="bottom-block__list__item--bottom"></div><img src="img/icons/Vector-5.svg" alt="">
+        </div>
         <div class="bottom-block__list__item--title">Преимущество</div>
       </div>
-      <div class="bottom-block__list__item"><img src="img/icons/Vector-5.svg" alt="">
+      <div class="bottom-block__list__item">
+        <div class="bottom-block__list__item--img">
+          <div class="bottom-block__list__item--top"></div>
+          <div class="bottom-block__list__item--bottom"></div><img src="img/icons/Vector-5.svg" alt="">
+        </div>
         <div class="bottom-block__list__item--title">Преимущество</div>
       </div>
-      <div class="bottom-block__list__item"><img src="img/icons/Vector-5.svg" alt="">
+      <div class="bottom-block__list__item">
+        <div class="bottom-block__list__item--img">
+          <div class="bottom-block__list__item--top"></div>
+          <div class="bottom-block__list__item--bottom"></div><img src="img/icons/Vector-5.svg" alt="">
+        </div>
         <div class="bottom-block__list__item--title">Преимущество</div>
       </div>
-      <div class="bottom-block__list__item"><img src="img/icons/Vector-5.svg" alt="">
+      <div class="bottom-block__list__item">
+        <div class="bottom-block__list__item--img">
+          <div class="bottom-block__list__item--top"></div>
+          <div class="bottom-block__list__item--bottom"></div><img src="img/icons/Vector-5.svg" alt="">
+        </div>
         <div class="bottom-block__list__item--title">Преимущество</div>
       </div>
     </div>
@@ -188,28 +344,42 @@
   </main>
 <footer>
   <div class="container"><a class="logo" href=""><img class="logo" src="img/logo2.svg" alt=""></a>
-    <div>
+    <div class="footer-menu">
       <ul>
         <li><a href="">О компании</a></li>
-        <li><a href="">История компании</a></li>
-        <li><a href="">Вакансии</a></li>
-        <li><a href="">Наши офисы</a></li>
-        <li><a href="">Реклама и сотрудничество</a></li>
+        <li><a href="">Курсы</a></li>
       </ul>
       <ul>
-        <li><a href="">Курсы</a></li>
+        <li><a href="">История компании</a></li>
         <li><a href="">Оплата и реквизиты</a></li>
+      </ul>
+      <ul>
+        <li><a href="">Вакансии</a></li>
         <li><a href="">Новости</a></li>
+      </ul>
+      <ul>
+        <li><a href="">Наши офисы</a></li>
         <li><a href="">Вклады</a></li>
+      </ul>
+      <ul>
+        <li><a href="">Реклама и сотрудничество</a></li>
         <li><a href="">Инвестиционные проекты</a></li>
       </ul>
+    </div>
+    <div class="language" data-dropdown>
+      <div class="language__value" data-dropdown-value>русский</div>
+      <div class="language__list">
+        <div class="language__list--item" data-dropdown-item>русский</div>
+        <div class="language__list--item" data-dropdown-item>украинский</div>
+        <div class="language__list--item" data-dropdown-item>english</div>
+      </div>
     </div>
   </div>
   <div class="container">
     <div class="phone"><img src="img/icons/phone.svg" alt="">+380 (63) 103 00 02</div>
     <div class="email"><img src="img/icons/e-mail.svg" alt="">info@mamedof.com</div>
     <div class="address"><img src="img/icons/location.svg" alt="">Одесса ул. Малая Арнаутская 85</div>
-    <div class="socials"><img src="img/icons/social/fb.svg" alt=""><img src="img/icons/social/inst.svg" alt=""><img src="img/icons/social/you.svg" alt=""></div>
+    <div class="socials"><a href=""><img src="img/icons/social/fb.svg" alt=""></a><a href=""><img src="img/icons/social/inst.svg" alt=""></a><a href=""><img src="img/icons/social/you.svg" alt=""></a></div>
   </div>
 </footer>
 <script type="text/javascript" src="bundle.js"></script></body>
