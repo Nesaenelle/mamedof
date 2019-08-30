@@ -1,7 +1,7 @@
 extends ../layout.pug
 
 block content
-	
+
 	section.main-slider
 		.main-slider__container
 			.container
@@ -9,10 +9,22 @@ block content
 				.main-slider__text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
 				.btn.btn--gold 
 					button Подробнее
+				.main-slider__navigation
+					.main-slider__arrow
+						button(type="button" class="main-slider__prev" id="next")
+					.main-slider__dots
+					.main-slider__arrow
+						button(type="button" class="main-slider__next" id="next")
 		.slider
-			.main-slider__slide.active(data-slide-id="1")
+			.main-slider__slide.active()
 				img(src="img/slider-1.jpg", alt="")
-			.main-slider__slide.active(data-slide-id="2")
+			.main-slider__slide.active()
+				img(src="img/slider-1.jpg", alt="")
+			.main-slider__slide.active()
+				img(src="img/slider-1.jpg", alt="")
+			.main-slider__slide.active()
+				img(src="img/slider-1.jpg", alt="")
+			.main-slider__slide.active()
 				img(src="img/slider-1.jpg", alt="")
 
 	section.company
@@ -21,13 +33,24 @@ block content
 				.title О компании
 				.text-block--descr Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах.
 			.company__right
-				img(src="img/photo.jpg", alt="")
-				div Роман Мамедоф
-				div Основатель компании
+				.company__owner
+					.company__owner__photo
+						img(src="img/photo.jpg", alt="")
+					.company__owner__name Роман Мамедоф
+					.company__owner__position Основатель компании
 
-				div рабочих мест создано
-
-				div действующих проектов
+				.company__stats
+					.company__stats__item
+						.triangle
+							div
+						.company__stats__item--value 870+
+						.company__stats__item--title рабочих мест создано
+					
+					.company__stats__item 
+						.triangle
+							div
+						.company__stats__item--value 110+
+						.company__stats__item--title действующих проектов
 
 	section.services
 		.container
@@ -36,44 +59,53 @@ block content
 			.services__list
 				.services__list__item
 					.services__list__item--wrapper
-						.services__list__item--title Продажа бизнеса
-						.services__list__item--text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-						a(href="" class="services__list__item--link") Подробнее
-						img(src="img/icons/Vector-5.svg", alt="")
+						.services__list__item--inner
+							.services__list__item--title Продажа бизнеса
+							.services__list__item--text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+							a(href="" class="services__list__item--link") Подробнее
+							img(src="img/icons/Vector-5.svg", alt="")
 				.services__list__item
 					.services__list__item--wrapper
-						.services__list__item--title Анализ рентабельности бизнес проектов
-						.services__list__item--text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-						a(href="" class="services__list__item--link") Подробнее
-						img(src="img/icons/Vector.svg", alt="")
+						.services__list__item--inner
+							.services__list__item--title Анализ рентабельности бизнес проектов
+							.services__list__item--text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+							a(href="" class="services__list__item--link") Подробнее
+							img(src="img/icons/Vector.svg", alt="")
 				.services__list__item
 					.services__list__item--wrapper
-						.services__list__item--title Акселерация стартап-проектов
-						.services__list__item--text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-						a(href="" class="services__list__item--link") Подробнее
-						img(src="img/icons/Vector-1.svg", alt="")
+						.services__list__item--inner
+							.services__list__item--title Акселерация стартап-проектов
+							.services__list__item--text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+							a(href="" class="services__list__item--link") Подробнее
+							img(src="img/icons/Vector-1.svg", alt="")
 				.services__list__item
 					.services__list__item--wrapper
-						.services__list__item--title Привличение инвестиций в бизнес
-						.services__list__item--text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-						a(href="" class="services__list__item--link") Подробнее
-						img(src="img/icons/Vector-2.svg", alt="")
+						.services__list__item--inner
+							.services__list__item--title Привличение инвестиций в бизнес
+							.services__list__item--text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+							a(href="" class="services__list__item--link") Подробнее
+							img(src="img/icons/Vector-2.svg", alt="")
 				.services__list__item
 					.services__list__item--wrapper
-						.services__list__item--title Юридическое сопровождение
-						.services__list__item--text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-						a(href="" class="services__list__item--link") Подробнее
-						img(src="img/icons/Vector-3.svg", alt="")
+						.services__list__item--inner
+							.services__list__item--title Юридическое сопровождение
+							.services__list__item--text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+							a(href="" class="services__list__item--link") Подробнее
+							img(src="img/icons/Vector-3.svg", alt="")
 				.services__list__item
 					.services__list__item--wrapper
-						.services__list__item--title Составление бизнес планов и ТЭО
-						.services__list__item--text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-						a(href="" class="services__list__item--link") Подробнее
-						img(src="img/icons/Vector-4.svg", alt="")
+						.services__list__item--inner
+							.services__list__item--title Составление бизнес планов и ТЭО
+							.services__list__item--text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+							a(href="" class="services__list__item--link") Подробнее
+							img(src="img/icons/Vector-4.svg", alt="")
 			.show-more показать еще
-			
+
 			.services__bottom
-				img(src="img/lion_head_skulpture.png", alt="")
+				div
+					//- .triangle
+					//- 	div
+					img(src="img/lion_head_skulpture.png", alt="")
 
 				div
 					.services__bottom--title “Жизнь — это игра, а деньги — способ вести счет”
@@ -105,4 +137,9 @@ block content
 			.title Новости
 
 			.title Наши партнеры
+
+			.partners-slider
+				each val in ['minfin_logo.png', 'finline_logo.png', 'logo_garnet.png', 'logo-main.png', 'odessa.png', 'head_logo.png', 'head_logo.png', 'head_logo.png']
+					div
+						img(src='img/partners/' + val alt="")
 	include ../parts/bottom-block.pug
