@@ -1,7 +1,18 @@
 footer 
 	background: #1A1A1A
-	padding: 67px 0 50px 0
+	padding: 40px 0 20px 0
 	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8)
+
+	.language
+		// width: 100px
+		margin-left: 70px
+		margin-top: 25px
+		&__list
+			top: auto
+			bottom: 20px
+
+	.logo
+		margin-right: 20px
 
 	.container
 		// max-width: 100%
@@ -16,10 +27,27 @@ footer
 		@media mqBigMobile
 			padding: 0 20px
 
-		& > div 
+		.footer-menu 
 			display flex
 			width: 100%
-			flex-wrap: wrap
+			padding-top: 25px
+			ul 
+				margin-top: 0px
+				width: 100%
+				display: inline-block
+				vertical-align: top
+				// display flex
+
+				li
+					white-space: nowrap
+					margin: 0 0 8px 0
+					a
+						font-weight: 300
+						letter-spacing: 0.8px
+						font-size: 14px
+						&:hover
+							text-decoration: underline
+
 		& + .container
 			margin-top: 20px
 			// justify-content: space-between
@@ -34,19 +62,3 @@ footer
 			justify-content: flex-end
 			img 
 				margin-left: 24px
-
-	ul 
-		margin-top: 0px
-		width: 100%
-		display: inline-block
-		vertical-align: top
-		display flex
-
-		li
-			margin: 8px 0
-			a
-				font-weight: 300
-				letter-spacing: 0.8px
-				font-size: 14px
-				&:hover
-					text-decoration: underline

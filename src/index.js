@@ -783,17 +783,19 @@ $('.main-slider .slider').slick({
   slidesToScroll: 1,
   arrows: true,
   dots: true,
-  appendDots: $('.main-slider__dots'),
-  prevArrow: $('.main-slider__prev'),
-  nextArrow: $('.main-slider__next')
+  appendDots: $('.main-slider .main-slider__dots'),
+  prevArrow: $('.main-slider .main-slider__prev'),
+  nextArrow: $('.main-slider .main-slider__next')
 });
 
-$('.partners-slider').slick({
+$('.partners-slider .slider').slick({
   infinite: true,
   slidesToShow: 6,
   slidesToScroll: 6,
-  arrows: false,
-  dots: false
+  arrows: true,
+  dots: false,
+  prevArrow: $('.partners-slider .main-slider__prev'),
+  nextArrow: $('.partners-slider .main-slider__next')
 });
 
 // $('.example-slider .slick-slide').on('click', function() {

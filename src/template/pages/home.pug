@@ -11,10 +11,10 @@ block content
 					button Подробнее
 				.main-slider__navigation
 					.main-slider__arrow
-						button(type="button" class="main-slider__prev" id="next")
+						button(type="button" class="main-slider__prev")
 					.main-slider__dots
 					.main-slider__arrow
-						button(type="button" class="main-slider__next" id="next")
+						button(type="button" class="main-slider__next")
 		.slider
 			.main-slider__slide.active()
 				img(src="img/slider-1.jpg", alt="")
@@ -99,17 +99,21 @@ block content
 							.services__list__item--text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
 							a(href="" class="services__list__item--link") Подробнее
 							img(src="img/icons/Vector-4.svg", alt="")
-			.show-more показать еще
+			.show-more 
+				| показать еще
 
 			.services__bottom
 				div
-					//- .triangle
-					//- 	div
-					img(src="img/lion_head_skulpture.png", alt="")
+					//- img(src="img/tiangle.svg" class="triangle-lion")
+					img(src="img/lion.svg", alt="")
 
 				div
-					.services__bottom--title “Жизнь — это игра, а деньги — способ вести счет”
+					.services__bottom--title 
+						| “Жизнь — это игра, 
+						br
+						| а деньги — способ вести счет”
 					.services__bottom--text Тед Тёрнер
+					br
 					.btn.btn--gold 
 						button Привлечь инвестиции
 
@@ -125,21 +129,53 @@ block content
 						.investment__list__item--title Название проекта
 						.investment__list__item--text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
 						.investment__list__item--price 
-							small 
-								b от
-							b 20 000
-							small 
-								b у.е.
-							div
-								small стоимость входа
+							div 
+								small 
+									b от
+								b 20 000
+								small 
+									b у.е.
+								div
+									small стоимость входа
 						.btn.btn--gold
 							button Инвестировать
-			.title Новости
+			.title.title--border
+				| Новости
+				ul
+					li.active Финансы
+					li Личностный рост
+					li Компании
+					li Бизнес интервью
+					li Наши проекты
+			.news
+				div
+					.services__list
+						each val in [1,2]
+							.services__list__item
+								.services__list__item--title Заголовок новости
+								.services__list__item--wrapper
+									.services__list__item--inner
+										.services__list__item--text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века...
+										a(href="" class="services__list__item--link") Читать больше
+										.services__list__item--date 20.08.19
+					.btn.btn--gold
+						button Смотреть все новости
+				div
+					img(src="img/news.jpg", alt="")
 
 			.title Наши партнеры
 
 			.partners-slider
-				each val in ['minfin_logo.png', 'finline_logo.png', 'logo_garnet.png', 'logo-main.png', 'odessa.png', 'head_logo.png', 'head_logo.png', 'head_logo.png']
-					div
-						img(src='img/partners/' + val alt="")
+				.main-slider__navigation
+					.main-slider__arrow
+						button(type="button" class="main-slider__prev")
+					.main-slider__arrow
+						button(type="button" class="main-slider__next")
+				.slider
+					each val in ['minfin_logo.png', 'finline_logo.png', 'logo_garnet.png', 'logo-main.png', 'odessa.png', 'head_logo.png', 'head_logo.png', 'head_logo.png']
+						div
+							.partners-slider--top
+							.partners-slider--img
+								img(src='img/partners/' + val alt="")
+							.partners-slider--bottom
 	include ../parts/bottom-block.pug

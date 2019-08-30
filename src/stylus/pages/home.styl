@@ -141,13 +141,66 @@ $slideOffsetTablet = 80px
 		display: flex
 		align-items: center
 		justify-content: space-between
+		font-family: IBM Plex Serif
+		&--border
+			border-bottom: 2px solid #ccc
+			width: 85%
+		ul 
+			display: flex
+			li
+				font-size: 14px
+				margin-left: 20px
+				position relative
+				padding: 20px 9px
+				cursor: pointer
+				font-family: Montserrat
+				&:after
+					position absolute
+					bottom: 0
+					left: 0
+					width: 100%
+					height: 3px
+					background: $c-gold
+				&.active
+					color: $c-gold
+					&:after
+						content: ''
 		a 
 			font-size: 16px
 			color: $c-gold
+			position relative
+			font-family: Montserrat
+			&:after
+				content: ''
+				position: absolute
+				right: -18px
+				bottom: 0px
+				top: 2px
+				margin: auto
+				width: 0
+				height: 0
+				border-top: 4px solid transparent
+				border-bottom: 4px solid transparent
+
+				border-left: 7px solid $c-gold
+				transition: 0.2s
+			&:before
+				content: ''
+				background: url(../img/tiangle-gold.svg) no-repeat
+				background-size: contain
+				width: 16px
+				height: 16px
+				position absolute
+				right: -22px
+				bottom: 1px
+				margin: auto
+				transform: rotate(90deg)
 
 	.company
 		padding: 0 0 50px 0
-		background: #eee
+		background: url(../img/new-york.jpg)
+		background-size: cover
+		background-position: center 0
 		.title 
 			flex-wrap: wrap
 			&:after 
@@ -233,6 +286,7 @@ $slideOffsetTablet = 80px
 				position: relative
 				.triangle
 					transform: rotate(180deg)
+					top: -6px
 				&--value
 					font-weight: bold
 					font-size: 30px
@@ -288,7 +342,7 @@ $slideOffsetTablet = 80px
 					color: $c-white
 					margin-bottom: 50px
 				&--link
-					margin-top: 15px
+					// margin-top: 20px
 					color: #555
 					width: 50%
 					border-left: 1px solid #444
@@ -296,7 +350,15 @@ $slideOffsetTablet = 80px
 					position: absolute
 					right: 0
 					bottom: 0
-					padding: 20px 30px
+					padding: 16px 30px
+					&:before
+						content: ''
+						position absolute
+						left: -5px
+						top: -5px
+						width: 30px
+						height: 25px
+						background: #1A1A1A
 				img
 					position: absolute
 					background: #1a1a1a
@@ -321,17 +383,51 @@ $slideOffsetTablet = 80px
 				margin: auto
 				width: 0
 				height: 0
-				border-left: 5px solid transparent
-				border-right: 5px solid transparent
+				border-left: 4px solid transparent
+				border-right: 4px solid transparent
 
 				border-top: 7px solid $c-gold
 				transition: 0.2s
+			&:before
+				content: ''
+				background: url(../img/tiangle-gold.svg) no-repeat
+				background-size: contain
+				width: 16px
+				height: 16px
+				position absolute
+				left: 0
+				right: 0
+				bottom: -18px
+				margin: auto
+				transform: rotate(180deg)
+
 		&__bottom
 			display: flex
+			align-items: center
 			margin-top: 50px
 			.btn--gold
 				width: 290px
 				margin-top 50px
+			& > div:first-child
+				width: 40%
+				position relative
+				// .triangle-lion
+				// 	position: absolute
+				// 	z-index 2
+				// 	width: 100%
+				// 	max-width: 382px
+				// 	& + 
+				img, svg
+					position relative
+					z-index 1
+					width: 100%
+					max-width: 382px
+					// margin: auto
+					display: block
+
+			& > div:last-child
+				width: 60%
+
 			&--title
 				font-family: IBM Plex Serif
 				font-style: normal
@@ -339,28 +435,55 @@ $slideOffsetTablet = 80px
 				font-size: 40px
 				line-height: 52px
 				color: $c-white
+				position relative
+				&:before 
+					content: ''
+					background: radial-gradient(29.14px at 56.81% 48.17%, #F9E7B8 0%, #BE9142 100%);
+					height: 2px
+					width: calc(65%)
+					left: -25px
+					bottom: -35px
+					display: block
+					position absolute
+				&:after 
+					content: ''
+					background: radial-gradient(29.14px at 56.81% 48.17%, #F9E7B8 0%, #BE9142 100%);
+					width: 2px
+					height: calc(100% + 40px)
+					left: -25px
+					bottom: -35px
+					display: block
+					position absolute
 			&--text
 				font-size: 20px
 				line-height: 24px
 				color: $c-white
+				margin-top: 20px
+				position: relative
+				background: #1a1a1a
+				display: inline-block
+				padding: 0 8px
+				// margin-left: 20px
 
 	.investment
-		padding: 50px 0
+		padding: 50px 0 70px 0
 		&__list
 			display: flex
 			justify-content: space-between
 			margin-top: 50px
+			& + .title
+				margin-top: 30px
 			&__item
 				background: $c-white
 				box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15)
-				padding: 20px
+				padding: 30px 20px 40px 20px
 				width: calc(100%/3 - 20px)
 				text-align: center
 				position: relative
 				&--line
 					border: 2px solid $c-gold
 					position: absolute
-					height: 50px
+					height: 60px
 					width: calc(100% - 40px)
 					margin: 15px auto
 					left: 20px
@@ -377,7 +500,7 @@ $slideOffsetTablet = 80px
 					padding: 0 16px
 					&:after
 						content: ''
-						background: $c-gold
+						background: linear-gradient(90deg, #6A5538 -0.02%, #BC975E 21.32%, #D9BE85 37.46%, #E7D491 55.17%, #C5A76C 67.3%, #BC975E 81.72%, #6A5538 99.94%);
 						height: 2px
 						width: 70px
 						margin: 15px auto
@@ -394,7 +517,24 @@ $slideOffsetTablet = 80px
 					font-family: IBM Plex Serif
 					font-style: normal
 					font-weight: 600
-
+					position relative
+					&:after
+						content: ''
+						background: radial-gradient(29.14px at 56.81% 48.17%, #F9E7B8 0%, #BE9142 100%);
+						height: 2px
+						width: 100%
+						margin: auto
+						left: 0
+						top: 0
+						bottom: 10px
+						display: block
+						position: absolute
+					& > div
+						position: relative
+						background: $c-white
+						z-index: 1
+						display: inline-block
+						padding: 0 15px
 					b
 						background: radial-gradient(29.14px at 56.81% 48.17%, #F9E7B8 0%, #BE9142 100%)
 						-webkit-background-clip: text
@@ -408,17 +548,119 @@ $slideOffsetTablet = 80px
 							color: #ccc
 				.btn
 					margin: 30px auto 0
+
+		.news
+			margin-top: 40px
+			display: flex
+			justify-content: space-between
+			& + .title
+				margin-top: 20px
+
+			.btn--gold
+				width: 300px
+				margin: 40px auto 0
+				display: block
+			.services__list__item
+				background: $c-white
+				width: calc(100%/2 - 15px)
+				padding: 20px 15px 25px 15px
+				box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15)
+				margin-top: 0
+				&--inner
+					background: $c-white
+					padding: 15px
+				&--wrapper
+					margin-top: 10px
+				&--link
+					width: 60%
+					border-color: #ccc
+					&:before
+						background: $c-white
+				&--title
+					color: #000
+					height: auto
+					padding-left: 10px
+				&--text
+					color: #000
+					margin-top: 0
+					line-height: 17px
+				&--date
+					font-style: normal;
+					font-weight: bold
+					font-size: 16px
+					line-height: 20px
+					color: $c-gold
+
+			& > div
+				&:first-child
+					width: calc(66%)
+				&:last-child
+					width: calc(33% - 20px)
+					img
+						width: 100%
+						max-width: 371px
+						display: block
+
 		.partners-slider
-			margin: 20px -20px
-			.slick-slide
+			margin: 40px -20px
+			position relative
+			.main-slider__navigation
+				left: 0
+				right: 0
+				margin: auto
+				width: 100px
+				justify-content: space-between
+				.main-slider__arrow
+					transform: scale(0.7)
+			&--top, &--bottom
+				background: radial-gradient(29.14px at 56.81% 48.17%, #F9E7B8 0%, #BE9142 100%);
+				position: absolute
+				left: -8px
+				top: -6px
+				width: calc(100% + 16px)
+				height: 30px
+				&:after
+					content: ''
+					background: $c-white
+					position: absolute
+					left: 1px
+					top: 1px
+					width: calc(100% - 2px)
+					height: calc(100% - 2px)
+			&--bottom
+				bottom: -6px
+				top: auto
+
+			&--img
+				position: absolute
+				left: 0
+				top: 0
+				width: 100%
+				height: 100%
 				background: #1A1A1A
-				height: 100px
-				margin: 0 20px
+				z-index: 1
 				display: flex
 				align-items: center
 				padding: 10px
 				img 
 					width: 100%
+					position relative
+					z-index: 1
+			.slick-list
+				padding: 10px 0
+			.slick-slide
+				height: 100px
+				margin: 0 20px
+				position: relative
+				&:after
+					content: ''
+					background: radial-gradient(29.14px at 56.81% 48.17%, #F9E7B8 0%, #BE9142 100%)
+					position: absolute
+					right: -20px
+					top: -5px
+					height: calc(100% + 10px)
+					width: 2px
+
 
 @keyframes slidein {
   from {
