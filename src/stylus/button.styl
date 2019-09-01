@@ -20,6 +20,7 @@
         position relative
 
         button
+            transition: 0.1s
             background: none
             border: none
             width: 100%
@@ -35,9 +36,10 @@
             text-align: center
             cursor: pointer
             &:before 
+                transition: 0.1s
                 content: ''
                 position: absolute
-                left: -6px
+                left: -5px
                 top: 0px
                 margin: auto
                 bottom: 0
@@ -47,9 +49,10 @@
                 pointer-events: none
                 // z-index: -1
             &:after 
+                transition: 0.1s
                 content: ''
                 position: absolute
-                right: -7px
+                right: -5px
                 top: 0px
                 margin: auto
                 bottom: 0
@@ -59,24 +62,40 @@
                 pointer-events: none
                 // z-index: -1
         &:before 
+            transition: 0.1s
             content: ''
             position: absolute
-            left: -12px
-            top: -10px
-            width: calc(100% + 23px)
+            left: -10px
+            top: -9px
+            width: calc(100% + 18px)
             height: 20px
             border: 1px solid $c-gold
             z-index: 0
         &:after 
+            transition: 0.1s
             content: ''
             position: absolute
-            left: -12px
-            bottom: -10px
-            width: calc(100% + 23px)
+            left: -10px
+            bottom: -9px
+            width: calc(100% + 18px)
             height: 20px
             border: 1px solid $c-gold
             z-index: 0
 
         &:hover 
+            &:before
+                background: $c-gold-dark
+                border-color: $c-gold-dark
+                height: 100%
+            &:after
+                background: $c-gold-dark
+                border-color: $c-gold-dark
+                height: 100%
             button 
-                background: darken($c-gold, 10%)
+                background: $c-gold-dark
+                &:before
+                    left: -17px
+                    border-color: $c-gold-dark
+                &:after
+                    right: -17px
+                    border-color: $c-gold-dark

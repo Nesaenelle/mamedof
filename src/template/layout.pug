@@ -10,13 +10,14 @@ body
 	header(class=htmlWebpackPlugin.options.page + '-header')
 		.container
 			include parts/main-logo.pug
-
-			.phone
-				img(src="img/icons/phone.svg", alt="")
-				| +380 (63) 103 00 02
-			.email
-				img(src="img/icons/e-mail.svg", alt="") 
-				| info@mamedof.com
+			
+			.center
+				a(href="tel:380631030002" class="phone")
+					img(src="img/icons/phone.svg", alt="")
+					| +380 (63) 103 00 02
+				a(href="mailto:info@mamedof.com" class="email")
+					img(src="img/icons/e-mail.svg", alt="") 
+					| info@mamedof.com
 
 			.language(data-dropdown)
 				.language__value(data-dropdown-value) русский

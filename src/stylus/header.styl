@@ -6,7 +6,7 @@ header
 	background: #1A1A1A
 	width: 100%
 	z-index: 100
-	padding-top: 10px
+	padding-top: 12px
 	// transition: 0.5s
 	// &.example-header
 	// 	position: relative
@@ -17,11 +17,9 @@ header
 	@media mqMidMobile
 		height: calc(35px + 45px)
 
-	.phone,
-	.email
-		color: $c-white
-		img 
-			margin-right: 5px
+	.language
+		margin-right: 10px
+		
 
 	nav
 		width: 100%
@@ -82,16 +80,25 @@ header
 		align-items:center
 		// height: 100%
 		// max-width: 100%
-		& > div 
+		& + .container
+			padding-top: 8px
+		.center 
 			height: 100%
 			display: flex
 			align-items: center
-			&:first-child {}
-				
-			&:last-child {
-				// justify-content: flex-end
-			}
-
+			margin-right: 100px
+			.phone,
+			.email
+				display flex
+				align-items: center
+				flex-wrap: nowrap
+				color: $c-white
+				margin: 0 40px
+				font-weight: 300
+				&:hover
+					text-decoration: underline
+				img 
+					margin-right: 5px
 
 
 		.burger

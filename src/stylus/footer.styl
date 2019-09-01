@@ -6,13 +6,14 @@ footer
 	.language
 		// width: 100px
 		margin-left: 70px
-		margin-top: 25px
+		margin-top: 30px
+		margin-right: 10px
 		&__list
 			top: auto
 			bottom: 20px
 
 	.logo
-		margin-right: 20px
+		margin-right: 25px
 
 	.container
 		// max-width: 100%
@@ -29,36 +30,51 @@ footer
 
 		.footer-menu 
 			display flex
+			justify-content: space-between
 			width: 100%
-			padding-top: 25px
+			padding-top: 30px
 			ul 
 				margin-top: 0px
-				width: 100%
+				// width: 100%
 				display: inline-block
 				vertical-align: top
 				// display flex
+				// &:nth-child(2)
+				// 	margin-right: 30px
 
 				li
 					white-space: nowrap
-					margin: 0 0 8px 0
+					margin: 0 0 15px 0
 					a
 						font-weight: 300
 						letter-spacing: 0.8px
-						font-size: 14px
+						font-size: 13px
 						&:hover
 							text-decoration: underline
 
 		& + .container
-			margin-top: 20px
+			margin-top: 14px
 			// justify-content: space-between
 		.email,.phone,.address
 			display flex
 			align-items: center
 			flex-wrap: nowrap
 			white-space nowrap
+			font-size: 20px
+			margin-right: 5px
+			&:hover
+				text-decoration: underline
 			img 
-				margin-right: 5px
+				margin-right: 8px
+		.email
+			margin: 0 42px
+
 		.socials
 			justify-content: flex-end
-			img 
-				margin-left: 24px
+			a
+				&:hover
+					img
+						transform: scale(1.1)
+				img 
+					margin-left: 24px
+					transition: 0.1s
