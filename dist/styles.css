@@ -672,6 +672,7 @@ header {
   width: 100%;
   z-index: 100;
   padding-top: 12px;
+  position: relative;
 }
 @media only screen and (max-width: 768px) {
   header {
@@ -778,6 +779,15 @@ header nav > ul > li .submenu li {
   width: 25%;
   margin: 0 0px 8px;
   padding: 0 20px;
+  float: left;
+}
+header nav > ul > li .submenu li.half-size {
+  width: 75%;
+  margin-bottom: 27px;
+}
+header nav > ul > li .submenu li.full-size {
+  width: 100%;
+  margin-bottom: 27px;
 }
 header nav > ul > li .submenu li:hover a {
   text-decoration: underline;
@@ -1170,7 +1180,7 @@ footer .container .socials a img {
   font-size: 20px;
   color: #fff;
   background: #ebb142;
-  z-index: 10;
+  z-index: 2;
   position: relative;
   display: block;
   text-align: center;
@@ -1291,9 +1301,10 @@ footer .container .socials a img {
 .home-page .main-slider__navigation {
   position: absolute;
   right: 47px;
-  bottom: -72px;
+  bottom: 40px;
   display: flex;
   align-items: center;
+  pointer-events: all;
 }
 .home-page .main-slider__navigation .main-slider__arrow {
   position: relative;
@@ -1376,7 +1387,8 @@ footer .container .socials a img {
 .home-page .main-slider__dots .slick-dots li.slick-active button:after {
   content: '';
 }
-.home-page .main-slider__container {
+.home-page .main-slider__container,
+.home-page .main-slider .slick-slide__container {
   position: absolute;
   z-index: 2;
   top: 0;
@@ -1386,12 +1398,20 @@ footer .container .socials a img {
   display: flex;
   align-items: center;
 }
+.home-page .main-slider__container {
+  pointer-events: none;
+}
 .home-page .main-slider__container .container {
+  width: 100%;
+  height: 100%;
   position: relative;
 }
 .home-page .main-slider .slider .slick-slide {
   height: 496px;
   position: relative;
+}
+.home-page .main-slider .slider .slick-slide__container {
+  position: absolute;
 }
 .home-page .main-slider .slider .slick-slide:after {
   content: '';
@@ -1439,12 +1459,16 @@ footer .container .socials a img {
   transition: 0.1s;
 }
 .home-page .title ul li:after {
+  content: '';
   position: absolute;
   bottom: -2px;
   left: 0;
   width: 100%;
   height: 4px;
   background: #ebb142;
+  transition: 0.2s;
+  opacity: 0;
+  visibility: hidden;
 }
 .home-page .title ul li:hover {
   color: #ebb142;
@@ -1454,7 +1478,8 @@ footer .container .socials a img {
   text-shadow: 0 0px 0px #be9141;
 }
 .home-page .title ul li.active:after {
-  content: '';
+  opacity: 1;
+  visibility: visible;
 }
 .home-page .title a {
   font-size: 16px;
@@ -1955,15 +1980,40 @@ footer .container .socials a img {
   margin: 39px auto 0;
   width: 250px;
 }
+.home-page .investment .tabs {
+  display: flex;
+  transition: 0.4s ease-in-out;
+}
+.home-page .investment .tabs[data-id="1"] {
+  transform: translateX(0%);
+}
+.home-page .investment .tabs[data-id="2"] {
+  transform: translateX(-100%);
+}
+.home-page .investment .tabs[data-id="3"] {
+  transform: translateX(-200%);
+}
+.home-page .investment .tabs[data-id="4"] {
+  transform: translateX(-300%);
+}
+.home-page .investment .tabs[data-id="5"] {
+  transform: translateX(-400%);
+}
 .home-page .investment .tabs + .title {
   margin-top: 38px;
   letter-spacing: 0.7px;
 }
 .home-page .investment .tabs--item {
-  display: none;
+  min-width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease-in 0.2s;
 }
 .home-page .investment .tabs--item.active {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  animation: 1.2s slidein 0.1s ease;
+  animation-fill-mode: forwards;
 }
 .home-page .investment .news {
   margin-top: 40px;
@@ -2051,6 +2101,7 @@ footer .container .socials a img {
   left: 0;
   right: 0;
   margin: auto;
+  bottom: -64px;
   width: 87px;
   justify-content: space-between;
 }
@@ -2120,42 +2171,34 @@ footer .container .socials a img {
 }
 @-moz-keyframes slidein {
   from {
-    visibility: hidden;
-    transform: translateX(100%);
+    transform: translateY(10%);
   }
   to {
-    visibility: visible;
-    transform: translateX(0%);
+    transform: translateY(0%);
   }
 }
 @-webkit-keyframes slidein {
   from {
-    visibility: hidden;
-    transform: translateX(100%);
+    transform: translateY(10%);
   }
   to {
-    visibility: visible;
-    transform: translateX(0%);
+    transform: translateY(0%);
   }
 }
 @-o-keyframes slidein {
   from {
-    visibility: hidden;
-    transform: translateX(100%);
+    transform: translateY(10%);
   }
   to {
-    visibility: visible;
-    transform: translateX(0%);
+    transform: translateY(0%);
   }
 }
 @keyframes slidein {
   from {
-    visibility: hidden;
-    transform: translateX(100%);
+    transform: translateY(10%);
   }
   to {
-    visibility: visible;
-    transform: translateX(0%);
+    transform: translateY(0%);
   }
 }
 .modal {
@@ -2490,6 +2533,16 @@ textarea {
 main {
   position: relative;
   overflow: hidden;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(25,25,25,0.6);
+  z-index: 6;
 }
 .container {
   max-width: 1250px;

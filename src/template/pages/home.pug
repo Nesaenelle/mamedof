@@ -5,10 +5,6 @@ block content
 	section.main-slider
 		.main-slider__container
 			.container
-				.main-slider__title Привлеките инвестиции в свой бизнес уже сегодня
-				.main-slider__text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
-				.btn.btn--gold 
-					button Подробнее
 				.main-slider__navigation
 					.main-slider__arrow
 						button(type="button" class="main-slider__prev")
@@ -16,16 +12,15 @@ block content
 					.main-slider__arrow
 						button(type="button" class="main-slider__next")
 		.slider
-			.main-slider__slide.active()
-				img(src="img/slider-1.jpg", alt="")
-			.main-slider__slide.active()
-				img(src="img/slider-1.jpg", alt="")
-			.main-slider__slide.active()
-				img(src="img/slider-1.jpg", alt="")
-			.main-slider__slide.active()
-				img(src="img/slider-1.jpg", alt="")
-			.main-slider__slide.active()
-				img(src="img/slider-1.jpg", alt="")
+			each val in [1,2,3,4,5]
+				.main-slider__slide
+					img(src="img/slider-1.jpg", alt="")
+					.slick-slide__container
+						.container
+							.main-slider__title Привлеките инвестиции в свой бизнес уже сегодня
+							.main-slider__text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+							.btn.btn--gold 
+								button Подробнее
 
 	section.company
 		.container
