@@ -392,7 +392,7 @@ $slideOffsetTablet = 80px
 				&--text
 					margin-top: 0
 					font-size: 12px
-					color: #d4d4d4
+					color: #bbbbbb
 					margin-bottom: 50px
 					font-weight: 300
 				&--link
@@ -608,9 +608,9 @@ $slideOffsetTablet = 80px
 						content: ''
 						background: radial-gradient(29.14px at 56.81% 48.17%, #F9E7B8 0%, #BE9142 100%);
 						height: 2px
-						width: 100%
+						width: calc(100% + 10px)
 						margin: auto
-						left: 0
+						left: -5px
 						top: 0
 						bottom: 10px
 						display: block
@@ -628,6 +628,10 @@ $slideOffsetTablet = 80px
 					small
 						font-size: 16px
 						margin: 0 5px
+						b	
+							font-size: 20px
+							position relative
+							top: -2px
 						&:last-child
 							font-size: 14px
 							display: block
@@ -675,6 +679,7 @@ $slideOffsetTablet = 80px
 						height: auto
 					&--link
 						border-color: #ccc
+						color: #ccc
 						&:before
 							background: #ccc
 						&:after
