@@ -780,14 +780,16 @@ header nav > ul > li .submenu li {
   margin: 0 0px 8px;
   padding: 0 20px;
   float: left;
+  height: 43px;
 }
-header nav > ul > li .submenu li.half-size {
-  width: 75%;
-  margin-bottom: 27px;
-}
-header nav > ul > li .submenu li.full-size {
+header nav > ul > li .submenu li.col-12 {
   width: 100%;
-  margin-bottom: 27px;
+}
+header nav > ul > li .submenu li.col-8 {
+  width: 75%;
+}
+header nav > ul > li .submenu li.col-6 {
+  width: 50%;
 }
 header nav > ul > li .submenu li:hover a {
   text-decoration: underline;
@@ -1734,7 +1736,7 @@ footer .container .socials a img {
 .home-page .services__list__item--link:before {
   content: '';
   position: absolute;
-  right: 0;
+  right: 1px;
   top: 0px;
   width: 82%;
   height: 1px;
@@ -1744,7 +1746,7 @@ footer .container .socials a img {
   content: '';
   position: absolute;
   left: -1px;
-  bottom: 0;
+  bottom: 1px;
   width: 1px;
   height: 65%;
   background: #3d3d3d;

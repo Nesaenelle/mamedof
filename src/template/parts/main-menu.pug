@@ -1,6 +1,6 @@
 nav
 	ul
-		each val in [{url: 'deposits', name: 'Вклады', pageName:''}, {url: 'investment', name: 'Инвестиционные проекты', pageName:''}, {url: 'business', name: 'Продажа бизнеса', pageName:''}, {url: 'services', name: 'Услуги', pageName: ""}, {url: '', name: 'Новости', pageName:''}, {url: '', name: 'Премиум', pageName:''}, {url: '', name: 'Информация', pageName:''}]
+		each val in [{url: 'deposits', name: 'Вклады', pageName:''}, {url: 'investment', name: 'Инвестиционные проекты', pageName:''}, {url: 'business', name: 'Продажа бизнеса', pageName:''}, {url: 'services', name: 'Услуги', pageName: ""}, {url: 'news', name: 'Новости', pageName:''}, {url: 'premium', name: 'Премиум', pageName:''}, {url: 'information', name: 'Информация', pageName:''}]
 			li(class=((val.pageName == htmlWebpackPlugin.options.page) ? 'active' : ''))
 				a(href=val.url + '.html')= val.name
 				if val.url === 'deposits'
@@ -11,3 +11,9 @@ nav
 					include submenu/business.pug
 				if val.url === 'services'
 					include submenu/services.pug
+				if val.url === 'news'
+					include submenu/news.pug
+				if val.url === 'premium'
+					include submenu/premium.pug
+				if val.url === 'information'
+					include submenu/information.pug
