@@ -2001,6 +2001,9 @@ footer .container .socials a img {
   border-color: #ccc;
   color: #ccc;
 }
+.home-page .investment .news .services__list__item--link:hover {
+  color: #fff;
+}
 .home-page .investment .news .services__list__item--link:before {
   background: #ccc;
 }
