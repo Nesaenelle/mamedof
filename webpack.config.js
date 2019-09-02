@@ -63,11 +63,11 @@ module.exports = {
             template: 'src/template/pages/home.pug',
             page: 'home'
         }),
-        // new HtmlWebpackPlugin({
-        //     filename: 'about.html',
-        //     template: 'src/template/pages/about.pug',
-        //     page: 'about'
-        // }),
+        new HtmlWebpackPlugin({
+            filename: 'business_sale.html',
+            template: 'src/template/pages/business_sale.pug',
+            page: 'business-sale'
+        }),
         // new HtmlWebpackPlugin({
         //     filename: 'our-team.html',
         //     template: 'src/template/pages/our-team.pug',

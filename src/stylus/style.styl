@@ -6,6 +6,7 @@
 @import 'footer.styl'
 @import 'button.styl'
 @import 'pages/home.styl'
+@import 'pages/business_sale.styl'
 // @import 'pages/about.styl'
 // @import 'pages/catalog.styl'
 // @import 'pages/examples.styl'
@@ -79,6 +80,124 @@ main
 				content: '|'
 				margin: 0 5px
 
+
+.title
+	font-size: 40px
+	position: relative
+	font-weight: 600
+	display: flex
+	align-items: center
+	justify-content: space-between
+	font-family: IBM Plex Serif
+	letter-spacing: 1px
+	& > div
+		width: 100%
+	&--border
+		border-bottom: 2px solid #eee
+		width: 87%
+	ul 
+		display: flex
+		align-self: flex-end
+		li
+			font-size: 16px
+			font-weight: 400
+			margin: 0 6px 0px
+			position relative
+			padding: 14px 13px
+			cursor: pointer
+			font-family: Montserrat
+			transition: 0.1s
+			&:after
+				content: ''
+				position absolute
+				bottom: -2px
+				left: 0
+				width: 100%
+				height: 4px
+				background: $c-gold
+				transition: 0.2s
+				opacity: 0
+				visibility hidden
+			&:hover
+				color: $c-gold
+			&.active
+				color: $c-gold-dark
+				// font-weight: 600
+				text-shadow: 0 0px 0px $c-gold-dark
+				&:after
+					opacity: 1
+					visibility: visible
+	a 
+		font-size: 16px
+		color: $c-gold-dark
+		position relative
+		font-family: Montserrat
+		font-weight: 400
+		margin: 10px 58px 0px 0px
+		&:after
+			content: ''
+			position: absolute
+			right: -28px
+			bottom: 0px
+			top: 1px
+			margin: auto
+			width: 0
+			height: 0
+			border-top: 4px solid transparent
+			border-bottom: 4px solid transparent
+
+			border-left: 7px solid $c-gold
+			transition: 0.2s
+		&:before
+			content: ''
+			background: url(../img/tiangle-gold.svg) no-repeat
+			background-size: contain
+			width: 17px
+			height: 17px
+			position absolute
+			right: -32px
+			bottom: 1px
+			margin: auto
+			transform: rotate(90deg)
+
+.top-block
+	height: 496px
+	background-size: cover!important
+	.container 
+		height: 100%
+		display: flex
+		flex-wrap: wrap
+		align-content: center
+		padding-bottom: 73px
+	&__title
+		color: #fff
+		width: 50%
+		font-size: 40px
+		font-weight: 600
+		line-height: 52px
+		font-family: IBM Plex Serif
+		position: relative
+		letter-spacing: 0.55px
+		// margin-top: -20px
+		&:after 
+			content: ''
+			background: radial-gradient(29.14px at 56.81% 48.17%, #F9E7B8 0%, #BE9142 100%);
+			height: 3px
+			width: 100px
+			// margin: 10px 0 20px 0
+			left: 0px
+			bottom: -30px
+			// margin: auto
+			display: block
+			position absolute
+	&__text
+		color: #fff
+		font-size: 20px
+		line-height: 24px
+		margin-top: 60px
+		width: 59%
+		font-weight: 300
+		letter-spacing: 0.15px
 
 .bottom-block
 	padding: 39px 0 48px 0
