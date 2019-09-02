@@ -180,14 +180,16 @@ $slideOffsetTablet = 80px
 					color: $c-gold
 				&.active
 					color: $c-gold-dark
-					font-weight: 600
+					// font-weight: 600
+					text-shadow: 0 0px 0px $c-gold-dark
 					&:after
 						content: ''
 		a 
 			font-size: 16px
-			color: $c-gold
+			color: $c-gold-dark
 			position relative
 			font-family: Montserrat
+			font-weight: 400
 			margin: 10px 58px 0px 0px
 			&:after
 				content: ''
@@ -313,7 +315,15 @@ $slideOffsetTablet = 80px
 				position: relative
 				.triangle
 					transform: rotate(180deg)
-					top: -8px
+					top: -10px
+					background: url(../img/tiangle-stats.svg) no-repeat
+					background-size: contain
+					position absolute
+					width: 145px
+					height: 118px
+					left: -6px
+					right: 0
+					margin: auto
 				&--value
 					font-weight: bold
 					font-size: 30px
@@ -345,13 +355,23 @@ $slideOffsetTablet = 80px
 			justify-content: space-between
 			flex-wrap: wrap
 			margin-top: 36px
+			flex-flow: row wrap
+			&::after
+				content: ""
+				// flex: auto
+				width:calc(100%/3 - 20px)
+
 			&__item
 				width: calc(100%/3 - 20px)
 				margin-bottom: 30px
 				background: #1A1A1A
 				box-shadow: 0px 0px 20px #000000
 				padding: 13px 20px
-				
+				&[data-hidden-service]
+					display none
+				// &:last-child
+				// 	margin-right: auto
+				// 	margin-left: 30px
 				&--wrapper
 					height: 100%
 					padding: 1px
@@ -415,7 +435,7 @@ $slideOffsetTablet = 80px
 					background: #1a1a1a
 					z-index: 1
 					padding: 0 7px
-					bottom: -10px
+					bottom: -8px
 					left: 5px
 
 		.show-more
@@ -425,6 +445,12 @@ $slideOffsetTablet = 80px
 			text-align: center
 			position: relative
 			cursor: pointer
+			&.active
+				&:after
+					transform: rotate(180deg)
+					bottom: -13px
+				&:before
+					transform: rotate(0)
 			&:after
 				content: ''
 				position: absolute
@@ -451,6 +477,7 @@ $slideOffsetTablet = 80px
 				bottom: -18px
 				margin: auto
 				transform: rotate(180deg)
+				transition: 0.2s
 
 		&__bottom
 			display: flex
@@ -606,17 +633,24 @@ $slideOffsetTablet = 80px
 							display: block
 							color: #ccc
 							margin-top: -2px
+							font-weight: 400
+							font-family: 'Montserrat', sans-serif
 				.btn
 					margin: 39px auto 0
 					width: 250px
 
+		.tabs
+			& + .title
+				margin-top: 38px
+				letter-spacing: 0.7px
+			&--item
+				display: none
+				&.active
+					display block
 		.news
 			margin-top: 40px
 			display: flex
 			justify-content: space-between
-			& + .title
-				margin-top: 38px
-				letter-spacing: 0.7px
 
 			.btn--gold
 				width: 268px

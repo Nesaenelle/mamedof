@@ -33,7 +33,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --color",
     "build": "webpack -p --color",
-    "deploy": "webpack -p && git subtree push --prefix dist origin gh-pages"
+    "deploy": "webpack -p && git add . && git commit -m 'fix' && git subtree push --prefix dist origin gh-pages"
   },
   "author": "",
   "license": "ISC"

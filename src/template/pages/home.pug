@@ -100,12 +100,25 @@ block content
 							.services__list__item--text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
 							a(href="" class="services__list__item--link") Подробнее
 							img(src="img/icons/Vector-4.svg", alt="")
+				.services__list__item(data-hidden-service)
+					.services__list__item--wrapper
+						.services__list__item--inner
+							.services__list__item--title Управление активами
+							.services__list__item--text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+							a(href="" class="services__list__item--link") Подробнее
+							img(src="img/icons/Vector-6.svg", alt="")
+				.services__list__item(data-hidden-service)
+					.services__list__item--wrapper
+						.services__list__item--inner
+							.services__list__item--title Антикризисный менеджмент
+							.services__list__item--text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+							a(href="" class="services__list__item--link") Подробнее
+							img(src="img/icons/Vector-7.svg", alt="")
 			.show-more 
 				| показать еще
 
 			.services__bottom
 				div
-					//- img(src="img/tiangle.svg" class="triangle-lion")
 					img(src="img/lion.svg", alt="")
 
 				div
@@ -143,26 +156,29 @@ block content
 			.title.title--border
 				| Новости
 				ul
-					li.active Финансы
-					li Личностный рост
-					li Компании
-					li Бизнес интервью
-					li Наши проекты
-			.news
-				div
-					.services__list
-						each val in [1,2]
-							.services__list__item
-								.services__list__item--title Заголовок новости
-								.services__list__item--wrapper
-									.services__list__item--inner
-										.services__list__item--text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века...
-										a(href="" class="services__list__item--link") Читать больше
-										.services__list__item--date 20.08.19
-					.btn.btn--gold
-						button Смотреть все новости
-				div
-					img(src="img/news.jpg", alt="")
+					li(data-tab-id="1" class="active") Финансы
+					li(data-tab-id="2") Личностный рост
+					li(data-tab-id="3") Компании
+					li(data-tab-id="4") Бизнес интервью
+					li(data-tab-id="5") Наши проекты
+			.tabs
+				each val in [1,2,3,4,5] 
+					.tabs--item(data-tab=val class=(val === 1 ? 'active' : ''))
+						.news
+							div
+								.services__list
+									each val in [1,2]
+										.services__list__item
+											.services__list__item--title Заголовок новости
+											.services__list__item--wrapper
+												.services__list__item--inner
+													.services__list__item--text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века...
+													a(href="" class="services__list__item--link") Читать больше
+													.services__list__item--date 20.08.19
+								.btn.btn--gold
+									button Смотреть все новости
+							div
+								img(src="img/news.jpg", alt="")
 
 			.title Наши партнеры
 
@@ -173,7 +189,7 @@ block content
 					.main-slider__arrow
 						button(type="button" class="main-slider__next")
 				.slider
-					each val in ['minfin_logo.png', 'finline_logo.png', 'logo_garnet.png', 'logo-main.png', 'odessa.png', 'head_logo.png', 'head_logo.png', 'head_logo.png']
+					each val in ['minfin_logo.png', 'finline_logo.png', 'logo_garnet.png', 'logo-main.png', 'odessa.png', 'head_logo.png', 'ucb-logo.png', 'ubki-logo.png']
 						div
 							.partners-slider--top
 							.partners-slider--img

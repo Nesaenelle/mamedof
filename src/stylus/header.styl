@@ -25,22 +25,31 @@ header
 		width: 100%
 		box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8)
 		margin-top: 15px
+		position relative
 		@media mqBigMobile
 			display: none
-		ul
+			
+		> ul
 			display: flex
+			position relative
+			z-index: 10
 			// justify-content: space-between
-			li
+			& > li
 				// margin: 0 6px
 				width: calc(100%/7)
 				border-right: 1px solid #292929
 				&:last-child
 					border-right: none
-				// &.active, &:hover
-				// 	a:after 
-				// 		display block
-				// text-align: center
-				a
+				&:hover
+					.submenu
+						opacity 1
+						visibility visible
+				&.active, &:hover
+					a 
+						background: #2C2C2C
+						&:after
+							opacity 1
+				& > a
 					display: flex
 					align-items: center
 					justify-content: center
@@ -52,21 +61,51 @@ header
 					position: relative
 					height: 81px
 					text-align: center
-					// &:after 
-					// 	content: ''
-					// 	display none
-					// 	position absolute
-					// 	z-index: 2
-					// 	bottom: -1px
-					// 	height: 2px
-					// 	width: 100%
-					// 	left: 0
-					// 	background: #0786ff
+					transition: 0.1s
+
+					&:after 
+						content: ''
+						opacity 0
+						transition: 0.1s
+						position absolute
+						z-index: 11
+						bottom: -1px
+						height: 2px
+						width: 100%
+						left: 0
+						background: linear-gradient(90deg, #6A5538 -0.02%, #BC975E 21.32%, #D9BE85 37.46%, #E7D491 55.17%, #C5A76C 67.3%, #BC975E 81.72%, #6A5538 99.94%);
 					@media mqSmallDesktop
 						padding: 13px 5px 15px
 					@media mqMidTablet
 						font-size: 12px
 						padding: 14px 2px 16px
+
+				.submenu
+					position absolute
+					left: 0
+					top: 100%
+					width: 100%
+					background: #2C2C2C
+					z-index 9
+					padding: 28px 34px 70px
+					flex-wrap: wrap
+					display: flex
+					justify-content: space-between
+					box-shadow: 0px 0px 15px #000000
+					opacity 0
+					visibility: hidden
+					transition: 0.1s
+					li 
+						width: 25%
+						margin: 0 0px 8px
+						padding: 0 20px
+						&:hover
+							a
+								text-decoration: underline
+						a
+							color: $c-white
+							font-weight: 400
+							font-size: 14px
 
 	.logo 
 		display: flex

@@ -113,13 +113,19 @@ import 'slick-carousel';
 //     $('.catalog__goods__grid').append(gridItems);
 // });
 
-// $('[data-tab-id]').on('click', function() {
-//     let id = $(this).data('tab-id');
-//     $(this).parent().children().removeClass('active');
-//     $(this).addClass('active');
-//     $(`[data-tab]`).removeClass('active');
-//     $(`[data-tab=${id}]`).addClass('active');
-// });
+$('[data-tab-id]').on('click', function() {
+    let id = $(this).data('tab-id');
+    $(this).parent().children().removeClass('active');
+    $(this).addClass('active');
+    $(`[data-tab]`).removeClass('active');
+    $(`[data-tab=${id}]`).addClass('active');
+});
+
+$('.show-more').on('click', function() {
+    $(this).text().trim() === 'показать еще' ? $(this).text('скрыть') : $(this).text('показать еще') 
+    $(this).toggleClass('active')
+    $('[data-hidden-service]').toggle()
+});
 
 // $('.product-card__main__slider__thumbs--item').on('click', function() {
 //     var src = $(this).find('img').attr('src');
