@@ -714,11 +714,9 @@ header nav > ul > li:hover .submenu {
   opacity: 1;
   visibility: visible;
 }
-header nav > ul > li.active a,
 header nav > ul > li:hover a {
   background: #2c2c2c;
 }
-header nav > ul > li.active a:after,
 header nav > ul > li:hover a:after {
   opacity: 1;
 }
@@ -2313,18 +2311,13 @@ footer .container .socials a img {
   height: calc(100% - 6px);
   background: #fff;
 }
-.business-page .stages__list__item--number span,
-.services-page .stages__list__item--number span,
-.investment-page .stages__list__item--number span,
-.business-page .project-status__list__item__number span,
-.services-page .project-status__list__item__number span,
-.investment-page .project-status__list__item__number span {
+.business-page .stages__list__item--number img,
+.services-page .stages__list__item--number img,
+.investment-page .stages__list__item--number img,
+.business-page .project-status__list__item__number img,
+.services-page .project-status__list__item__number img,
+.investment-page .project-status__list__item__number img {
   position: relative;
-  background: linear-gradient(90deg, #6a5538 -0.02%, #bc975e 21.32%, #d9be85 37.46%, #e7d491 55.17%, #c5a76c 67.3%, #bc975e 81.72%, #6a5538 99.94%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  line-height: 0.9em;
-  height: 100%;
 }
 .business-page .stages__list__item--title,
 .services-page .stages__list__item--title,
@@ -2928,7 +2921,7 @@ footer .container .socials a img {
 .services-page .project-status__list__item__title,
 .investment-page .project-status__list__item__title {
   margin-top: 18px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   line-height: 20px;
 }
