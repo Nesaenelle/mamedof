@@ -2133,33 +2133,20 @@ footer .container .socials a img {
     transform: translateY(0%);
   }
 }
-.business-page .service-block .container {
-  display: flex;
-  justify-content: space-between;
+.business-page .tabs,
+.services-page .tabs,
+.investment-page .tabs {
+  margin-top: 43px;
 }
-.business-page .service-block__center {
-  width: 100%;
+.business-page .tabs li,
+.services-page .tabs li,
+.investment-page .tabs li {
+  padding: 14px 0;
+  margin: 0 55px 0 0;
 }
-.business-page .service-block__left {
-  width: 57%;
-  background: #fff;
-}
-.business-page .service-block__left .btn--gold {
-  margin-top: 44px;
-  margin-left: 16px;
-  width: 252px;
-}
-.business-page .service-block__text {
-  letter-spacing: 0px;
-  line-height: 1.3em;
-  padding: 28px 37px 54px 22px;
-  box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
-}
-.business-page .service-block__right {
-  width: calc(43% - 30px);
-  margin-top: 25px;
-}
-.banner {
+.business-page .banner,
+.services-page .banner,
+.investment-page .banner {
   height: 630px;
   background: #ccc;
   display: flex;
@@ -2170,7 +2157,9 @@ footer .container .socials a img {
   background-size: cover !important;
   position: relative;
 }
-.banner:after {
+.business-page .banner:after,
+.services-page .banner:after,
+.investment-page .banner:after {
   content: '';
   background: rgba(0,0,0,0.45);
   position: absolute;
@@ -2179,12 +2168,16 @@ footer .container .socials a img {
   width: 100%;
   height: 100%;
 }
-.banner .btn--gold {
+.business-page .banner .btn--gold,
+.services-page .banner .btn--gold,
+.investment-page .banner .btn--gold {
   width: 250px;
   margin-top: 48px;
   z-index: 1;
 }
-.banner--title {
+.business-page .banner--title,
+.services-page .banner--title,
+.investment-page .banner--title {
   font-family: IBM Plex Serif;
   font-weight: 600;
   font-size: 40px;
@@ -2193,7 +2186,9 @@ footer .container .socials a img {
   position: relative;
   z-index: 1;
 }
-.banner--title:after {
+.business-page .banner--title:after,
+.services-page .banner--title:after,
+.investment-page .banner--title:after {
   content: '';
   background: radial-gradient(29.14px at 56.81% 48.17%, #f9e7b8 0%, #be9142 100%);
   height: 3px;
@@ -2205,7 +2200,9 @@ footer .container .socials a img {
   display: block;
   position: absolute;
 }
-.banner--text {
+.business-page .banner--text,
+.services-page .banner--text,
+.investment-page .banner--text {
   font-size: 20px;
   text-align: center;
   color: #fff;
@@ -2213,26 +2210,82 @@ footer .container .socials a img {
   position: relative;
   z-index: 1;
 }
-.stages {
-  margin-top: 51px;
+.business-page .service-block .container,
+.services-page .service-block .container,
+.investment-page .service-block .container {
+  display: flex;
+  justify-content: space-between;
 }
-.stages .title {
+.business-page .service-block__center,
+.services-page .service-block__center,
+.investment-page .service-block__center {
+  width: 100%;
+}
+.business-page .service-block__center .service-block__text,
+.services-page .service-block__center .service-block__text,
+.investment-page .service-block__center .service-block__text {
+  padding: 42px 37px 54px 22px;
+}
+.business-page .service-block__left,
+.services-page .service-block__left,
+.investment-page .service-block__left {
+  width: 57%;
+  background: #fff;
+}
+.business-page .service-block__left .btn--gold,
+.services-page .service-block__left .btn--gold,
+.investment-page .service-block__left .btn--gold {
+  margin-top: 44px;
+  margin-left: 16px;
+  width: 252px;
+}
+.business-page .service-block__text,
+.services-page .service-block__text,
+.investment-page .service-block__text {
+  letter-spacing: 0px;
+  line-height: 1.3em;
+  padding: 28px 37px 54px 22px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+}
+.business-page .service-block__right,
+.services-page .service-block__right,
+.investment-page .service-block__right {
+  width: calc(43% - 30px);
+  margin-top: 25px;
+}
+.business-page .stages,
+.services-page .stages,
+.investment-page .stages {
+  margin-top: 38px;
+}
+.business-page .stages .title,
+.services-page .stages .title,
+.investment-page .stages .title {
   letter-spacing: 0px;
 }
-.stages__list {
-  margin: 38px 0 30px;
+.business-page .stages__list,
+.services-page .stages__list,
+.investment-page .stages__list {
+  margin: 38px 0 15px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.stages__list__item {
+.business-page .stages__list__item,
+.services-page .stages__list__item,
+.investment-page .stages__list__item {
   width: calc(100% / 3 - 20px);
   box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
   padding: 21px 10px 24px 10px;
   margin-bottom: 25px;
   display: flex;
 }
-.stages__list__item--number {
+.business-page .stages__list__item--number,
+.services-page .stages__list__item--number,
+.investment-page .stages__list__item--number,
+.business-page .project-status__list__item__number,
+.services-page .project-status__list__item__number,
+.investment-page .project-status__list__item__number {
   font-size: 100px;
   font-family: IBM Plex Serif;
   font-weight: 600;
@@ -2246,7 +2299,12 @@ footer .container .socials a img {
   justify-content: center;
   align-items: center;
 }
-.stages__list__item--number:before {
+.business-page .stages__list__item--number:before,
+.services-page .stages__list__item--number:before,
+.investment-page .stages__list__item--number:before,
+.business-page .project-status__list__item__number:before,
+.services-page .project-status__list__item__number:before,
+.investment-page .project-status__list__item__number:before {
   content: '';
   position: absolute;
   left: 3px;
@@ -2255,7 +2313,12 @@ footer .container .socials a img {
   height: calc(100% - 6px);
   background: #fff;
 }
-.stages__list__item--number span {
+.business-page .stages__list__item--number span,
+.services-page .stages__list__item--number span,
+.investment-page .stages__list__item--number span,
+.business-page .project-status__list__item__number span,
+.services-page .project-status__list__item__number span,
+.investment-page .project-status__list__item__number span {
   position: relative;
   background: linear-gradient(90deg, #6a5538 -0.02%, #bc975e 21.32%, #d9be85 37.46%, #e7d491 55.17%, #c5a76c 67.3%, #bc975e 81.72%, #6a5538 99.94%);
   -webkit-background-clip: text;
@@ -2263,73 +2326,110 @@ footer .container .socials a img {
   line-height: 0.9em;
   height: 100%;
 }
-.stages__list__item--title {
+.business-page .stages__list__item--title,
+.services-page .stages__list__item--title,
+.investment-page .stages__list__item--title {
   width: 100%;
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
   margin-top: 7px;
 }
-.stages__list__item--text {
+.business-page .stages__list__item--text,
+.services-page .stages__list__item--text,
+.investment-page .stages__list__item--text {
   margin-top: 10px;
   font-size: 14px;
   line-height: 17px;
 }
-.our-investment-projects {
-  margin-top: 1.875rem;
+.business-page .our-investment-projects,
+.services-page .our-investment-projects,
+.investment-page .our-investment-projects,
+.business-page .all-businesss-projects,
+.services-page .all-businesss-projects,
+.investment-page .all-businesss-projects {
+  margin-top: 54px;
 }
-.our-investment-projects .text {
+.business-page .our-investment-projects .text,
+.services-page .our-investment-projects .text,
+.investment-page .our-investment-projects .text,
+.business-page .all-businesss-projects .text,
+.services-page .all-businesss-projects .text,
+.investment-page .all-businesss-projects .text {
   width: 60%;
 }
-.projects-list {
-  margin: 46px 0 60px;
+.business-page .projects-list,
+.services-page .projects-list,
+.investment-page .projects-list {
+  margin: 60px 0 60px;
+  display: none;
 }
-.projects-list__item {
+.business-page .projects-list.active,
+.services-page .projects-list.active,
+.investment-page .projects-list.active {
+  display: block;
+}
+.business-page .projects-list__item,
+.services-page .projects-list__item,
+.investment-page .projects-list__item {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
-  padding: 32px 30px;
+  padding: 29px 30px;
   margin-bottom: 26px;
   position: relative;
 }
-.projects-list__item:before {
+.business-page .projects-list__item:before,
+.services-page .projects-list__item:before,
+.investment-page .projects-list__item:before {
   content: '';
   position: absolute;
-  left: 40px;
-  top: 18px;
-  height: calc(100% - 60px);
-  width: calc(100% - 90px);
+  left: 71px;
+  top: 13px;
+  height: calc(100% - 58px);
+  width: calc(100% - 140px);
   background: radial-gradient(29.14px at 56.81% 48.17%, #f9e7b8 0%, #be9142 100%);
 }
-.projects-list__item:after {
+.business-page .projects-list__item:after,
+.services-page .projects-list__item:after,
+.investment-page .projects-list__item:after {
   content: '';
   position: absolute;
-  left: 42px;
-  top: 20px;
-  height: calc(100% - 64px);
-  width: calc(100% - 94px);
+  left: 73px;
+  top: 15px;
+  height: calc(100% - 62px);
+  width: calc(100% - 144px);
   background: #fff;
 }
-.projects-list__item img {
-  width: 35%;
+.business-page .projects-list__item img,
+.services-page .projects-list__item img,
+.investment-page .projects-list__item img {
+  width: calc(33% + 5px);
   display: block;
   position: relative;
   z-index: 1;
 }
-.projects-list__item > div {
-  width: calc(65% - 36px);
+.business-page .projects-list__item > div,
+.services-page .projects-list__item > div,
+.investment-page .projects-list__item > div {
+  width: calc(67% - 40px);
   position: relative;
   z-index: 1;
-  padding-right: 50px;
+  padding-right: 76px;
+  padding-top: 12px;
 }
-.projects-list__item--title {
+.business-page .projects-list__item--title,
+.services-page .projects-list__item--title,
+.investment-page .projects-list__item--title {
   font-family: IBM Plex Serif;
   font-weight: 600;
   font-size: 30px;
   line-height: 39px;
 }
-.projects-list__item--text {
+.business-page .projects-list__item--text,
+.services-page .projects-list__item--text,
+.investment-page .projects-list__item--text {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -2338,46 +2438,499 @@ footer .container .socials a img {
   color: #9d9d9d;
   margin-top: 30px;
 }
-.projects-list__item--buttons {
+.business-page .projects-list__item--buttons,
+.services-page .projects-list__item--buttons,
+.investment-page .projects-list__item--buttons {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 39px;
   align-items: flex-start;
+  width: 96%;
 }
-.projects-list__item--buttons .btn--gold {
+.business-page .projects-list__item--buttons .btn--gold,
+.services-page .projects-list__item--buttons .btn--gold,
+.investment-page .projects-list__item--buttons .btn--gold {
   margin-top: 8px;
+  margin-left: 10px;
+  width: 250px;
 }
-.projects-list__item__stats {
+.business-page .projects-list__item__stats,
+.services-page .projects-list__item__stats,
+.investment-page .projects-list__item__stats {
   display: flex;
-  margin-top: 40px;
+  margin-top: 31px;
+  justify-content: space-between;
+  padding-right: 30px;
 }
-.projects-list__item__stats > div:nth-child(1) {
-  width: 40%;
+.business-page .projects-list__item__stats__line,
+.services-page .projects-list__item__stats__line,
+.investment-page .projects-list__item__stats__line {
+  background: radial-gradient(29.14px at 56.81% 48.17%, #f9e7b8 0%, #be9142 100%);
+  width: 10%;
+  height: 1px;
+  align-self: flex-end;
+  margin-bottom: 7px;
 }
-.projects-list__item__stats > div:nth-child(2) {
-  width: 30%;
+.business-page .projects-list__item__stats > div,
+.services-page .projects-list__item__stats > div,
+.investment-page .projects-list__item__stats > div {
+  position: relative;
 }
-.projects-list__item__stats > div:nth-child(3) {
-  width: 30%;
-}
-.projects-list__item__stats b {
+.business-page .projects-list__item__stats b,
+.services-page .projects-list__item__stats b,
+.investment-page .projects-list__item__stats b {
   font-weight: 600;
   font-size: 40px;
   line-height: 49px;
   width: 100%;
   display: block;
 }
-.projects-list__item__stats b small {
+.business-page .projects-list__item__stats b small,
+.services-page .projects-list__item__stats b small,
+.investment-page .projects-list__item__stats b small {
   font-size: 30px;
   line-height: 24px;
   font-weight: 400;
   margin-left: 4px;
 }
-.projects-list__item__stats b + small {
+.business-page .projects-list__item__stats b + small,
+.services-page .projects-list__item__stats b + small,
+.investment-page .projects-list__item__stats b + small {
   font-size: 14px;
   line-height: 17px;
   width: 100%;
   display: block;
+}
+.business-page .specifications + .service-block,
+.services-page .specifications + .service-block,
+.investment-page .specifications + .service-block {
+  margin-top: 108px;
+}
+.business-page .specifications + .service-block .service-block__text,
+.services-page .specifications + .service-block .service-block__text,
+.investment-page .specifications + .service-block .service-block__text {
+  padding-top: 28px;
+}
+.business-page .specifications .container,
+.services-page .specifications .container,
+.investment-page .specifications .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.business-page .specifications__title,
+.services-page .specifications__title,
+.investment-page .specifications__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 26px;
+}
+.business-page .specifications__left,
+.services-page .specifications__left,
+.investment-page .specifications__left {
+  width: calc(50% - 15px);
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+  padding: 48px 30px 30px;
+  position: relative;
+  background: #fff;
+}
+.business-page.business-page .specifications__left--investment,
+.services-page.services-page .specifications__left--investment,
+.investment-page.investment-page .specifications__left--investment {
+  padding-top: 30px;
+  padding-bottom: 34px;
+}
+.business-page.business-page .specifications__left--investment:before,
+.services-page.services-page .specifications__left--investment:before,
+.investment-page.investment-page .specifications__left--investment:before {
+  width: calc(100% + 16px);
+  height: calc(100% + 17px);
+}
+.business-page.business-page .specifications__left--investment .specifications__item,
+.services-page.services-page .specifications__left--investment .specifications__item,
+.investment-page.investment-page .specifications__left--investment .specifications__item {
+  margin-bottom: 17px;
+}
+.business-page .specifications__left:before,
+.services-page .specifications__left:before,
+.investment-page .specifications__left:before {
+  content: '';
+  left: 12px;
+  top: 15px;
+  width: calc(100% + 74px);
+  height: calc(100% + 43px);
+  position: absolute;
+  border-left: 2px solid #bd9600;
+  border-right: 2px solid #bd9600;
+  background-image: linear-gradient(90deg, #bd9600, #f9e7b8, #be9142), linear-gradient(90deg, #bd9600, #f9e7b8, #be9142);
+  background-size: 100% 2px;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+}
+.business-page .specifications__right,
+.services-page .specifications__right,
+.investment-page .specifications__right {
+  width: calc(50% - 15px);
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+  padding: 48px 30px 30px;
+  position: relative;
+  background: #fff;
+}
+.business-page.business-page .specifications__right--no-border,
+.services-page.services-page .specifications__right--no-border,
+.investment-page.investment-page .specifications__right--no-border {
+  background: none;
+  box-shadow: none;
+  padding-left: 36px;
+  padding-top: 17px;
+  padding-right: 0px;
+  padding-bottom: 0;
+}
+.business-page.business-page .specifications__right--no-border:before,
+.services-page.services-page .specifications__right--no-border:before,
+.investment-page.investment-page .specifications__right--no-border:before {
+  content: none;
+}
+.business-page .specifications__right:before,
+.services-page .specifications__right:before,
+.investment-page .specifications__right:before {
+  content: '';
+  left: 12px;
+  top: 15px;
+  width: 100%;
+  height: calc(100% + 15px);
+  position: absolute;
+  border-left: 2px solid #bd9600;
+  border-right: 2px solid #bd9600;
+  background-image: linear-gradient(90deg, #bd9600, #f9e7b8, #be9142), linear-gradient(90deg, #bd9600, #f9e7b8, #be9142);
+  background-size: 100% 2px;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+}
+.business-page .specifications__item,
+.services-page .specifications__item,
+.investment-page .specifications__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px 0;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 33px;
+  position: relative;
+}
+.business-page .specifications__item:last-child,
+.services-page .specifications__item:last-child,
+.investment-page .specifications__item:last-child {
+  margin-bottom: 0 !important;
+}
+.business-page .specifications__item__title,
+.services-page .specifications__item__title,
+.investment-page .specifications__item__title {
+  font-size: 14px;
+  line-height: 17px;
+}
+.business-page .specifications__item__value,
+.services-page .specifications__item__value,
+.investment-page .specifications__item__value {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+.business-page .specifications-cost-price,
+.services-page .specifications-cost-price,
+.investment-page .specifications-cost-price {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.business-page .specifications-cost-price__item,
+.services-page .specifications-cost-price__item,
+.investment-page .specifications-cost-price__item {
+  width: calc(100% / 3 - 30px);
+  margin-bottom: 19px;
+}
+.business-page .specifications-cost-price__item__title,
+.services-page .specifications-cost-price__item__title,
+.investment-page .specifications-cost-price__item__title {
+  margin-top: -4px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  position: relative;
+  padding: 7px 4px 4px 4px;
+  border-left: 1px solid #bd9600;
+  border-right: 1px solid #bd9600;
+  background-image: linear-gradient(90deg, #bd9600, #f9e7b8, #be9142), linear-gradient(90deg, #bd9600, #f9e7b8, #be9142);
+  background-size: 100% 1px;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+}
+.business-page .specifications-cost-price__item__value,
+.services-page .specifications-cost-price__item__value,
+.investment-page .specifications-cost-price__item__value {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  background: #1a1a1a;
+  padding: 16px 10px;
+  color: #fff;
+  text-align: center;
+  margin: 0 21px;
+  position: relative;
+  z-index: 1;
+}
+.business-page .specifications-cost-price__item__value small,
+.services-page .specifications-cost-price__item__value small,
+.investment-page .specifications-cost-price__item__value small {
+  font-weight: 400;
+}
+.business-page .transaction-cycle,
+.services-page .transaction-cycle,
+.investment-page .transaction-cycle {
+  margin-top: 24px;
+}
+.business-page .transaction-cycle .title,
+.services-page .transaction-cycle .title,
+.investment-page .transaction-cycle .title {
+  padding: 0 71px;
+}
+.business-page .transaction-cycle__list,
+.services-page .transaction-cycle__list,
+.investment-page .transaction-cycle__list {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 71px;
+}
+.business-page .transaction-cycle__list__item,
+.services-page .transaction-cycle__list__item,
+.investment-page .transaction-cycle__list__item {
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  width: 200px;
+  padding: 20px 5px;
+  text-align: center;
+  position: relative;
+}
+.business-page .transaction-cycle__list__item:before,
+.services-page .transaction-cycle__list__item:before,
+.investment-page .transaction-cycle__list__item:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: -45%;
+  background: radial-gradient(29.14px at 56.81% 48.17%, #f9e7b8 0%, #be9142 100%);
+  width: 55%;
+  height: 1px;
+}
+.business-page .transaction-cycle__list__item:after,
+.services-page .transaction-cycle__list__item:after,
+.investment-page .transaction-cycle__list__item:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: -45%;
+  background: radial-gradient(29.14px at 56.81% 48.17%, #f9e7b8 0%, #be9142 100%);
+  width: 55%;
+  height: 1px;
+}
+.business-page .transaction-cycle__list__item__arrows,
+.services-page .transaction-cycle__list__item__arrows,
+.investment-page .transaction-cycle__list__item__arrows {
+  display: flex;
+  align-items: center;
+}
+.business-page .transaction-cycle__list__item__title,
+.services-page .transaction-cycle__list__item__title,
+.investment-page .transaction-cycle__list__item__title {
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 10px;
+}
+.business-page .transaction-cycle__list__item__number,
+.services-page .transaction-cycle__list__item__number,
+.investment-page .transaction-cycle__list__item__number {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+  position: relative;
+  width: 68px;
+  height: 50px;
+  margin: -27px auto 20px;
+}
+.business-page .transaction-cycle__list__item__number:after,
+.services-page .transaction-cycle__list__item__number:after,
+.investment-page .transaction-cycle__list__item__number:after {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: -10px;
+  width: calc(100% + 11px);
+  height: calc(100% + 15px);
+  border-left: 1px solid #bd9600;
+  border-right: 1px solid #bd9600;
+  background-image: linear-gradient(90deg, #bd9600, #f9e7b8, #be9142), linear-gradient(90deg, #bd9600, #f9e7b8, #be9142);
+  background-size: 100% 1px;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+}
+.business-page .transaction-cycle__list__item__time,
+.services-page .transaction-cycle__list__item__time,
+.investment-page .transaction-cycle__list__item__time {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #c4c4c4;
+  position: relative;
+  top: -5px;
+}
+.business-page .project-status,
+.services-page .project-status,
+.investment-page .project-status {
+  margin-top: 35px;
+  margin-bottom: 57px;
+}
+.business-page .project-status .title,
+.services-page .project-status .title,
+.investment-page .project-status .title {
+  padding: 0 71px;
+}
+.business-page .project-status__list,
+.services-page .project-status__list,
+.investment-page .project-status__list {
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 71px;
+}
+.business-page .project-status__list__item,
+.services-page .project-status__list__item,
+.investment-page .project-status__list__item {
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  padding: 0px 20px 17px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: calc(100% / 4 - 32px);
+  position: relative;
+}
+.business-page .project-status__list__item.active,
+.services-page .project-status__list__item.active,
+.investment-page .project-status__list__item.active {
+  background: #1a1a1a;
+}
+.business-page .project-status__list__item.active .project-status__list__item__number:before,
+.services-page .project-status__list__item.active .project-status__list__item__number:before,
+.investment-page .project-status__list__item.active .project-status__list__item__number:before {
+  background: #1a1a1a;
+}
+.business-page .project-status__list__item.active .project-status__list__item__title,
+.services-page .project-status__list__item.active .project-status__list__item__title,
+.investment-page .project-status__list__item.active .project-status__list__item__title {
+  color: #fff;
+}
+.business-page .project-status__list__item.active:after,
+.services-page .project-status__list__item.active:after,
+.investment-page .project-status__list__item.active:after {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: -12px;
+  width: calc(100% + 20px);
+  height: calc(100% + 24px);
+  border-left: 2px solid #bd9600;
+  border-right: 2px solid #bd9600;
+  background-image: linear-gradient(90deg, #bd9600, #f9e7b8, #be9142), linear-gradient(90deg, #bd9600, #f9e7b8, #be9142);
+  background-size: 100% 2px;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+}
+.business-page .project-status__list__item__number,
+.services-page .project-status__list__item__number,
+.investment-page .project-status__list__item__number {
+  margin: 0;
+}
+.business-page .project-status__list__item__number--left,
+.services-page .project-status__list__item__number--left,
+.investment-page .project-status__list__item__number--left,
+.business-page .project-status__list__item__number--right,
+.services-page .project-status__list__item__number--right,
+.investment-page .project-status__list__item__number--right {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.business-page .project-status__list__item__number--left:before,
+.services-page .project-status__list__item__number--left:before,
+.investment-page .project-status__list__item__number--left:before,
+.business-page .project-status__list__item__number--right:before,
+.services-page .project-status__list__item__number--right:before,
+.investment-page .project-status__list__item__number--right:before,
+.business-page .project-status__list__item__number--left:after,
+.services-page .project-status__list__item__number--left:after,
+.investment-page .project-status__list__item__number--left:after,
+.business-page .project-status__list__item__number--right:after,
+.services-page .project-status__list__item__number--right:after,
+.investment-page .project-status__list__item__number--right:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: radial-gradient(29.14px at 56.81% 48.17%, #f9e7b8 0%, #be9142 100%);
+}
+.business-page .project-status__list__item__number--left:before,
+.services-page .project-status__list__item__number--left:before,
+.investment-page .project-status__list__item__number--left:before,
+.business-page .project-status__list__item__number--right:before,
+.services-page .project-status__list__item__number--right:before,
+.investment-page .project-status__list__item__number--right:before {
+  width: 1px;
+  height: 40%;
+}
+.business-page .project-status__list__item__number--left:after,
+.services-page .project-status__list__item__number--left:after,
+.investment-page .project-status__list__item__number--left:after,
+.business-page .project-status__list__item__number--right:after,
+.services-page .project-status__list__item__number--right:after,
+.investment-page .project-status__list__item__number--right:after {
+  width: 2px;
+  height: 75%;
+}
+.business-page .project-status__list__item__number--left:before,
+.services-page .project-status__list__item__number--left:before,
+.investment-page .project-status__list__item__number--left:before {
+  left: -36px;
+}
+.business-page .project-status__list__item__number--left:after,
+.services-page .project-status__list__item__number--left:after,
+.investment-page .project-status__list__item__number--left:after {
+  left: -18px;
+}
+.business-page .project-status__list__item__number--right:before,
+.services-page .project-status__list__item__number--right:before,
+.investment-page .project-status__list__item__number--right:before {
+  right: -36px;
+}
+.business-page .project-status__list__item__number--right:after,
+.services-page .project-status__list__item__number--right:after,
+.investment-page .project-status__list__item__number--right:after {
+  right: -18px;
+}
+.business-page .project-status__list__item__title,
+.services-page .project-status__list__item__title,
+.investment-page .project-status__list__item__title {
+  margin-top: 18px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
 .modal {
   display: flex;
@@ -2750,6 +3303,53 @@ main {
   content: '|';
   margin: 0 5px;
 }
+.tabs,
+.title ul {
+  display: inline-flex;
+  align-self: flex-end;
+}
+.tabs--underline,
+.title ul--underline {
+  border-bottom: 2px solid #eee;
+}
+.tabs li,
+.title ul li {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 6px 0px;
+  position: relative;
+  padding: 14px 13px;
+  cursor: pointer;
+  font-family: Montserrat;
+  transition: 0.1s;
+}
+.tabs li:after,
+.title ul li:after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #ebb142;
+  transition: 0.2s;
+  opacity: 0;
+  visibility: hidden;
+}
+.tabs li:hover,
+.title ul li:hover {
+  color: #ebb142;
+}
+.tabs li.active,
+.title ul li.active {
+  color: #be9141;
+  text-shadow: 0 0px 0px #be9141;
+}
+.tabs li.active:after,
+.title ul li.active:after {
+  opacity: 1;
+  visibility: visible;
+}
 .title {
   font-size: 40px;
   position: relative;
@@ -2773,48 +3373,11 @@ main {
 .title--underline:after {
   content: '';
   background: radial-gradient(29.14px at 56.81% 48.17%, #f9e7b8 0%, #be9142 100%);
-  height: 2px;
+  height: 3px;
   width: 100px;
-  margin: 15px 0 18px 0;
+  margin: 27px 0 26px 0;
   left: 0;
   display: block;
-}
-.title ul {
-  display: flex;
-  align-self: flex-end;
-}
-.title ul li {
-  font-size: 16px;
-  font-weight: 400;
-  margin: 0 6px 0px;
-  position: relative;
-  padding: 14px 13px;
-  cursor: pointer;
-  font-family: Montserrat;
-  transition: 0.1s;
-}
-.title ul li:after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background: #ebb142;
-  transition: 0.2s;
-  opacity: 0;
-  visibility: hidden;
-}
-.title ul li:hover {
-  color: #ebb142;
-}
-.title ul li.active {
-  color: #be9141;
-  text-shadow: 0 0px 0px #be9141;
-}
-.title ul li.active:after {
-  opacity: 1;
-  visibility: visible;
 }
 .title a {
   font-size: 16px;
@@ -2876,7 +3439,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  padding-bottom: 73px;
+  padding-bottom: 20px;
 }
 .top-block__title {
   color: #fff;
