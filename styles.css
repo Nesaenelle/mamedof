@@ -3139,9 +3139,16 @@ main {
 .form-section .container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .form-section.form-section--bottom {
   padding-bottom: 70px;
+}
+.form-section.form-section--bottom .form-section__left {
+  width: calc(74% + 5px);
+}
+.form-section.form-section--bottom .form-section__right {
+  width: 30%;
 }
 .form-section.form-section--white {
   background: none;
@@ -3163,10 +3170,10 @@ main {
   color: #000;
 }
 .form-section__left {
-  width: calc(74% + 5px);
+  width: calc(65% + 5px);
 }
 .form-section__right {
-  width: 30%;
+  width: 32%;
 }
 .form-section .title {
   color: #fff;
