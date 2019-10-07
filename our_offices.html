@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:100,300,400,500,600,700&amp;display=swap" rel="stylesheet">
 <link href="styles.css" rel="stylesheet"></head>
 <body>
-  <header class="information-header">
+  <header class="our-offices-header">
     <div class="container"><a class="logo" href="index.html"><img src="img/logo1.svg" alt=""></a>
       <div class="center"><a class="phone" href="tel:380631030002"><img src="img/icons/phone.svg" alt="">+380 (63) 103 00 02</a><a class="email" href="mailto:info@mamedof.com"><img src="img/icons/e-mail.svg" alt="">info@mamedof.com</a></div>
       <div class="language" data-dropdown>
@@ -82,22 +82,14 @@
 </nav>
     </div>
   </header>
-  <main class="information-page">
-    <div class="top-block" style="background: url(./img/information-top.png)">
-      <div class="container">
-        <div class="top-block__title">Информация о компании</div>
-        <div class="top-block__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</div>
-      </div>
-    </div>
-    <section class="service-block">
-      <div class="container">
-        <div class="service-block__center">
-          <div class="service-block__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах.</div>
-        </div>
-      </div>
-    </section>
-    <section class="form-section form-section--white form-section--bottom">
-      <div class="container">
+  <main class="our-offices-page">
+    <section class="map" id="map"></section>
+    <div class="map-info">
+      <div class="map-info__phone">+380 (63) 103 00 02</div>
+      <div class="map-info__email">info@mamedof.com</div>
+      <div class="map-info__address">Одесса, ул. Малая Арнаутская, 85</div>
+      <div class="map-info__line"></div>
+      <div class="form-section form-section--white form-section--bottom form-section--map">
         <div class="title">Форма обратной связи</div>
         <div class="form-section__left">
           <form class="form" novalidate id="form">
@@ -123,7 +115,43 @@
         </div>
         <div class="form-section__right"></div>
       </div>
-    </section>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnqzl83PotR4zyjowCMfF9f-Xg9j9ezQU&amp;callback=initMap" async defer></script>
+    <script>
+      var map;
+      
+      function initMap() {
+      	map = new google.maps.Map(document.getElementById('map'), {
+      		center: { lat: 46.4711516, lng: 30.7360532},
+      		zoom: 16,
+      		disableDefaultUI: true,
+      		scaleControl: false,
+      		navigationControl: false,
+      		draggable: false
+      	});
+      	var contentString = '<div class="marker-content">Одесса, ул. Малая Арнаутская, 85</div>';
+      	var infowindow = new google.maps.InfoWindow({
+      		content: contentString
+      	});
+      	//- var icon = {
+      	//- 	url: "img/marker.svg", // url
+      	//- 	scaledSize: new google.maps.Size(72, 72), // scaled size
+      	//- 	origin: new google.maps.Point(0, 0), // origin
+      	//- 	anchor: new google.maps.Point(24, 75) // anchor
+      	//- };
+      
+      	var marker = new google.maps.Marker({
+      		position: { lat: 46.4711516, lng: 30.7360532},
+      		map: map,
+      		title: 'Hello World!',
+      		//- icon: icon
+      	});
+      
+      	marker.addListener('click', function() {
+      		infowindow.open(map, marker);
+      	});
+      }
+    </script>
     <div class="overlay"></div>
   </main>
 <footer>
