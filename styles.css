@@ -3336,6 +3336,7 @@ main {
   display: inline-flex;
   position: relative;
   cursor: pointer;
+  overflow: hidden;
 }
 .form-section .upload-file__wrapper > div {
   display: flex;
@@ -3343,12 +3344,15 @@ main {
   align-content: center;
 }
 .form-section .upload-file input {
-  opacity: 0;
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
+  cursor: pointer;
+}
+.form-section .upload-file input::-webkit-file-upload-button {
+  display: none;
 }
 .form-section .upload-file img {
   float: left;
