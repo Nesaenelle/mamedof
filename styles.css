@@ -1622,7 +1622,7 @@ footer .container .socials a img {
 .investment-page .stages__list__item {
   width: calc(100% / 3 - 20px);
   box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
-  padding: 21px 10px 24px 10px;
+  padding: 21px 8px 24px 10px;
   margin-bottom: 25px;
   display: flex;
 }
@@ -1672,7 +1672,7 @@ footer .container .socials a img {
 .investment-page .stages__list__item--title {
   width: 100%;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
   margin-top: 7px;
 }
@@ -3233,7 +3233,7 @@ main {
 .investment-list__item--text {
   font-size: 12px;
   line-height: 15px;
-  text-align: left;
+  text-align: center;
 }
 .investment-list__item--price {
   text-align: center;
@@ -3572,13 +3572,18 @@ main {
   padding: 12px 15px 25px 15px;
   margin-top: 0;
 }
+.services-list--with-title .services-list__item--img {
+  height: 90px;
+  display: flex;
+  align-items: center;
+}
 .services-list--with-title .services-list__item--inner {
   padding: 15px;
-  height: auto;
+  height: 100%;
 }
 .services-list--with-title .services-list__item--wrapper {
   margin-top: 14px;
-  height: auto;
+  height: 87%;
 }
 .services-list--with-title .services-list__item--title {
   height: auto;
