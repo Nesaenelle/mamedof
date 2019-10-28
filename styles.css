@@ -2482,6 +2482,59 @@ footer .container .socials a img {
   opacity: 1;
   visibility: visible;
 }
+.modal[data-modal-id="modal-general"] .logo,
+.modal[data-modal-id="modal-premium"] .logo {
+  width: 134px;
+  margin-top: -8px;
+}
+.modal[data-modal-id="modal-general"] .modal--body,
+.modal[data-modal-id="modal-premium"] .modal--body {
+  width: 471px;
+}
+.modal[data-modal-id="modal-general"] .modal--close,
+.modal[data-modal-id="modal-premium"] .modal--close {
+  width: 20px;
+  height: 20px;
+}
+.modal[data-modal-id="modal-general"] .modal--close img,
+.modal[data-modal-id="modal-premium"] .modal--close img {
+  width: 100%;
+}
+.modal[data-modal-id="modal-general"] .modal--title,
+.modal[data-modal-id="modal-premium"] .modal--title {
+  text-align: center;
+  margin-top: 15px;
+  padding: 0;
+  font-size: 26px;
+}
+.modal[data-modal-id="modal-general"] .modal--bottom,
+.modal[data-modal-id="modal-premium"] .modal--bottom {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #838383;
+  width: 80%;
+  margin: 26px auto 0;
+}
+.modal[data-modal-id="modal-general"] .form,
+.modal[data-modal-id="modal-premium"] .form {
+  margin-top: 10px;
+}
+.modal[data-modal-id="modal-general"] .form .input,
+.modal[data-modal-id="modal-premium"] .form .input {
+  margin-top: 16px;
+  box-shadow: none;
+}
+.modal[data-modal-id="modal-premium"] .modal--body {
+  background: #1a1a1a;
+}
+.modal[data-modal-id="modal-premium"] .modal--title {
+  color: #fff;
+}
+.modal[data-modal-id="modal-premium"] .form .input input {
+  color: #fff;
+}
 .modal--overlay {
   z-index: 101;
   position: fixed;
