@@ -3506,8 +3506,11 @@ main {
 .service-block__text {
   letter-spacing: 0px;
   line-height: 1.3em;
-  padding: 28px 37px 54px 22px;
+  padding: 28px 36px 54px 22px;
   box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+}
+.service-block__text a {
+  color: #ebb142;
 }
 .service-block__text.service-block__text--border {
   position: relative;
