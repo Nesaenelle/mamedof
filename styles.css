@@ -2117,6 +2117,16 @@ footer .container .socials a img {
 .investment-page .all-businesss-projects {
   margin-top: 54px;
 }
+@media only screen and (max-width: 768px) {
+  .business-page .our-investment-projects,
+  .services-page .our-investment-projects,
+  .investment-page .our-investment-projects,
+  .business-page .all-businesss-projects,
+  .services-page .all-businesss-projects,
+  .investment-page .all-businesss-projects {
+    margin-top: 30px;
+  }
+}
 .business-page .our-investment-projects .text,
 .services-page .our-investment-projects .text,
 .investment-page .our-investment-projects .text,
@@ -2125,11 +2135,38 @@ footer .container .socials a img {
 .investment-page .all-businesss-projects .text {
   width: 60%;
 }
+@media only screen and (max-width: 768px) {
+  .business-page .our-investment-projects .text,
+  .services-page .our-investment-projects .text,
+  .investment-page .our-investment-projects .text,
+  .business-page .all-businesss-projects .text,
+  .services-page .all-businesss-projects .text,
+  .investment-page .all-businesss-projects .text {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .business-page .our-investment-projects .text,
+  .services-page .our-investment-projects .text,
+  .investment-page .our-investment-projects .text,
+  .business-page .all-businesss-projects .text,
+  .services-page .all-businesss-projects .text,
+  .investment-page .all-businesss-projects .text {
+    width: 100%;
+  }
+}
 .business-page .projects-list,
 .services-page .projects-list,
 .investment-page .projects-list {
   margin: 60px 0 60px;
   display: none;
+}
+@media only screen and (max-width: 768px) {
+  .business-page .projects-list,
+  .services-page .projects-list,
+  .investment-page .projects-list {
+    margin: 30px 0 30px;
+  }
 }
 .business-page .projects-list.active,
 .services-page .projects-list.active,
@@ -2158,6 +2195,20 @@ footer .container .socials a img {
   width: calc(100% - 140px);
   background: radial-gradient(29.14px at 56.81% 48.17%, #f9e7b8 0%, #be9142 100%);
 }
+@media only screen and (max-width: 1440px) {
+  .business-page .projects-list__item:before,
+  .services-page .projects-list__item:before,
+  .investment-page .projects-list__item:before {
+    height: calc(100% - 28px);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .business-page .projects-list__item:before,
+  .services-page .projects-list__item:before,
+  .investment-page .projects-list__item:before {
+    display: none;
+  }
+}
 .business-page .projects-list__item:after,
 .services-page .projects-list__item:after,
 .investment-page .projects-list__item:after {
@@ -2169,6 +2220,20 @@ footer .container .socials a img {
   width: calc(100% - 144px);
   background: #fff;
 }
+@media only screen and (max-width: 1440px) {
+  .business-page .projects-list__item:after,
+  .services-page .projects-list__item:after,
+  .investment-page .projects-list__item:after {
+    height: calc(100% - 32px);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .business-page .projects-list__item:after,
+  .services-page .projects-list__item:after,
+  .investment-page .projects-list__item:after {
+    display: none;
+  }
+}
 .business-page .projects-list__item img,
 .services-page .projects-list__item img,
 .investment-page .projects-list__item img {
@@ -2176,6 +2241,22 @@ footer .container .socials a img {
   display: block;
   position: relative;
   z-index: 1;
+  object-fit: contain;
+}
+@media only screen and (max-width: 768px) {
+  .business-page .projects-list__item img,
+  .services-page .projects-list__item img,
+  .investment-page .projects-list__item img {
+    margin: auto;
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .business-page .projects-list__item img,
+  .services-page .projects-list__item img,
+  .investment-page .projects-list__item img {
+    width: 50%;
+  }
 }
 .business-page .projects-list__item > div,
 .services-page .projects-list__item > div,
@@ -2186,6 +2267,22 @@ footer .container .socials a img {
   padding-right: 76px;
   padding-top: 12px;
 }
+@media only screen and (max-width: 980px) {
+  .business-page .projects-list__item > div,
+  .services-page .projects-list__item > div,
+  .investment-page .projects-list__item > div {
+    padding-right: 38px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .business-page .projects-list__item > div,
+  .services-page .projects-list__item > div,
+  .investment-page .projects-list__item > div {
+    padding-top: 0;
+    width: 100%;
+    padding-right: 0;
+  }
+}
 .business-page .projects-list__item--title,
 .services-page .projects-list__item--title,
 .investment-page .projects-list__item--title {
@@ -2193,6 +2290,22 @@ footer .container .socials a img {
   font-weight: 600;
   font-size: 30px;
   line-height: 39px;
+}
+@media only screen and (max-width: 768px) {
+  .business-page .projects-list__item--title,
+  .services-page .projects-list__item--title,
+  .investment-page .projects-list__item--title {
+    font-size: 22px;
+    line-height: 1.2em;
+    margin-top: 15px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .business-page .projects-list__item--title,
+  .services-page .projects-list__item--title,
+  .investment-page .projects-list__item--title {
+    text-align: center;
+  }
 }
 .business-page .projects-list__item--text,
 .services-page .projects-list__item--text,
@@ -2205,6 +2318,21 @@ footer .container .socials a img {
   color: #9d9d9d;
   margin-top: 30px;
 }
+@media only screen and (max-width: 768px) {
+  .business-page .projects-list__item--text,
+  .services-page .projects-list__item--text,
+  .investment-page .projects-list__item--text {
+    margin-top: 16px;
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .business-page .projects-list__item--text,
+  .services-page .projects-list__item--text,
+  .investment-page .projects-list__item--text {
+    text-align: center;
+  }
+}
 .business-page .projects-list__item--buttons,
 .services-page .projects-list__item--buttons,
 .investment-page .projects-list__item--buttons {
@@ -2213,6 +2341,35 @@ footer .container .socials a img {
   margin-top: 39px;
   align-items: flex-start;
   width: 96%;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 1440px) {
+  .business-page .projects-list__item--buttons,
+  .services-page .projects-list__item--buttons,
+  .investment-page .projects-list__item--buttons {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .business-page .projects-list__item--buttons,
+  .services-page .projects-list__item--buttons,
+  .investment-page .projects-list__item--buttons {
+    display: block;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .business-page .projects-list__item--buttons,
+  .services-page .projects-list__item--buttons,
+  .investment-page .projects-list__item--buttons {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .business-page .projects-list__item--buttons,
+  .services-page .projects-list__item--buttons,
+  .investment-page .projects-list__item--buttons {
+    display: block;
+  }
 }
 .business-page .projects-list__item--buttons .btn--gold,
 .services-page .projects-list__item--buttons .btn--gold,
@@ -2221,6 +2378,56 @@ footer .container .socials a img {
   margin-left: 10px;
   width: 250px;
 }
+@media only screen and (max-width: 1280px) {
+  .business-page .projects-list__item--buttons .btn--gold,
+  .services-page .projects-list__item--buttons .btn--gold,
+  .investment-page .projects-list__item--buttons .btn--gold {
+    width: 210px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .business-page .projects-list__item--buttons .btn--gold,
+  .services-page .projects-list__item--buttons .btn--gold,
+  .investment-page .projects-list__item--buttons .btn--gold {
+    max-width: 220px;
+    width: 100%;
+    display: block;
+    margin: 0px auto 0;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .business-page .projects-list__item--buttons a,
+  .services-page .projects-list__item--buttons a,
+  .investment-page .projects-list__item--buttons a {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .business-page .projects-list__item--buttons a,
+  .services-page .projects-list__item--buttons a,
+  .investment-page .projects-list__item--buttons a {
+    margin-top: 20px;
+    width: 100%;
+    display: block;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .business-page .projects-list__item--buttons a .btn--grey,
+  .services-page .projects-list__item--buttons a .btn--grey,
+  .investment-page .projects-list__item--buttons a .btn--grey {
+    max-width: 230px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .business-page .projects-list__item--buttons a .btn--grey,
+  .services-page .projects-list__item--buttons a .btn--grey,
+  .investment-page .projects-list__item--buttons a .btn--grey {
+    max-width: 240px;
+    display: block;
+    width: 100%;
+    margin: 26px auto 0;
+  }
+}
 .business-page .projects-list__item__stats,
 .services-page .projects-list__item__stats,
 .investment-page .projects-list__item__stats {
@@ -2228,6 +2435,15 @@ footer .container .socials a img {
   margin-top: 31px;
   justify-content: space-between;
   padding-right: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .business-page .projects-list__item__stats,
+  .services-page .projects-list__item__stats,
+  .investment-page .projects-list__item__stats {
+    flex-wrap: wrap;
+    padding-right: 0;
+    margin-top: 20px;
+  }
 }
 .business-page .projects-list__item__stats__line,
 .services-page .projects-list__item__stats__line,
@@ -2238,10 +2454,39 @@ footer .container .socials a img {
   align-self: flex-end;
   margin-bottom: 7px;
 }
+@media only screen and (max-width: 980px) {
+  .business-page .projects-list__item__stats__line,
+  .services-page .projects-list__item__stats__line,
+  .investment-page .projects-list__item__stats__line {
+    width: 3%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .business-page .projects-list__item__stats__line,
+  .services-page .projects-list__item__stats__line,
+  .investment-page .projects-list__item__stats__line {
+    width: 10%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .business-page .projects-list__item__stats__line,
+  .services-page .projects-list__item__stats__line,
+  .investment-page .projects-list__item__stats__line {
+    display: none;
+  }
+}
 .business-page .projects-list__item__stats > div,
 .services-page .projects-list__item__stats > div,
 .investment-page .projects-list__item__stats > div {
   position: relative;
+}
+@media only screen and (max-width: 480px) {
+  .business-page .projects-list__item__stats > div,
+  .services-page .projects-list__item__stats > div,
+  .investment-page .projects-list__item__stats > div {
+    width: 100%;
+    text-align: center;
+  }
 }
 .business-page .projects-list__item__stats b,
 .services-page .projects-list__item__stats b,
@@ -2252,6 +2497,27 @@ footer .container .socials a img {
   width: 100%;
   display: block;
 }
+@media only screen and (max-width: 980px) {
+  .business-page .projects-list__item__stats b,
+  .services-page .projects-list__item__stats b,
+  .investment-page .projects-list__item__stats b {
+    font-size: 36px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .business-page .projects-list__item__stats b,
+  .services-page .projects-list__item__stats b,
+  .investment-page .projects-list__item__stats b {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .business-page .projects-list__item__stats b,
+  .services-page .projects-list__item__stats b,
+  .investment-page .projects-list__item__stats b {
+    font-size: 26px;
+  }
+}
 .business-page .projects-list__item__stats b small,
 .services-page .projects-list__item__stats b small,
 .investment-page .projects-list__item__stats b small {
@@ -2260,6 +2526,20 @@ footer .container .socials a img {
   font-weight: 400;
   margin-left: 4px;
 }
+@media only screen and (max-width: 980px) {
+  .business-page .projects-list__item__stats b small,
+  .services-page .projects-list__item__stats b small,
+  .investment-page .projects-list__item__stats b small {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .business-page .projects-list__item__stats b small,
+  .services-page .projects-list__item__stats b small,
+  .investment-page .projects-list__item__stats b small {
+    font-size: 24px;
+  }
+}
 .business-page .projects-list__item__stats b + small,
 .services-page .projects-list__item__stats b + small,
 .investment-page .projects-list__item__stats b + small {
@@ -2267,6 +2547,13 @@ footer .container .socials a img {
   line-height: 17px;
   width: 100%;
   display: block;
+}
+@media only screen and (max-width: 980px) {
+  .business-page .projects-list__item__stats b + small,
+  .services-page .projects-list__item__stats b + small,
+  .investment-page .projects-list__item__stats b + small {
+    font-size: 13px;
+  }
 }
 .business-page .specifications + .service-block,
 .services-page .specifications + .service-block,
@@ -2285,6 +2572,13 @@ footer .container .socials a img {
   justify-content: space-between;
   align-items: flex-start;
 }
+@media only screen and (max-width: 980px) {
+  .business-page .specifications .container,
+  .services-page .specifications .container,
+  .investment-page .specifications .container {
+    flex-wrap: wrap;
+  }
+}
 .business-page .specifications__title,
 .services-page .specifications__title,
 .investment-page .specifications__title {
@@ -2301,6 +2595,13 @@ footer .container .socials a img {
   padding: 48px 30px 30px;
   position: relative;
   background: #fff;
+}
+@media only screen and (max-width: 980px) {
+  .business-page .specifications__left,
+  .services-page .specifications__left,
+  .investment-page .specifications__left {
+    width: 100%;
+  }
 }
 .business-page.business-page .specifications__left--investment,
 .services-page.services-page .specifications__left--investment,
@@ -2344,6 +2645,15 @@ footer .container .socials a img {
   position: relative;
   background: #fff;
 }
+@media only screen and (max-width: 980px) {
+  .business-page .specifications__right,
+  .services-page .specifications__right,
+  .investment-page .specifications__right {
+    width: 100%;
+    padding: 0;
+    margin-top: 60px;
+  }
+}
 .business-page.business-page .specifications__right--no-border,
 .services-page.services-page .specifications__right--no-border,
 .investment-page.investment-page .specifications__right--no-border {
@@ -2353,6 +2663,13 @@ footer .container .socials a img {
   padding-top: 17px;
   padding-right: 0px;
   padding-bottom: 0;
+}
+@media only screen and (max-width: 980px) {
+  .business-page.business-page .specifications__right--no-border,
+  .services-page.services-page .specifications__right--no-border,
+  .investment-page.investment-page .specifications__right--no-border {
+    padding: 0;
+  }
 }
 .business-page.business-page .specifications__right--no-border:before,
 .services-page.services-page .specifications__right--no-border:before,
@@ -2403,6 +2720,14 @@ footer .container .socials a img {
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
+  margin-left: 15px;
+}
+@media only screen and (max-width: 480px) {
+  .business-page .specifications__item__value,
+  .services-page .specifications__item__value,
+  .investment-page .specifications__item__value {
+    font-size: 16px;
+  }
 }
 .business-page .specifications-cost-price,
 .services-page .specifications-cost-price,
@@ -2416,6 +2741,34 @@ footer .container .socials a img {
 .investment-page .specifications-cost-price__item {
   width: calc(100% / 3 - 30px);
   margin-bottom: 19px;
+}
+@media only screen and (max-width: 980px) {
+  .business-page .specifications-cost-price__item,
+  .services-page .specifications-cost-price__item,
+  .investment-page .specifications-cost-price__item {
+    width: calc(100% / 4 - 20px);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .business-page .specifications-cost-price__item,
+  .services-page .specifications-cost-price__item,
+  .investment-page .specifications-cost-price__item {
+    width: calc(100% / 3 - 20px);
+  }
+}
+@media only screen and (max-width: 480px) {
+  .business-page .specifications-cost-price__item,
+  .services-page .specifications-cost-price__item,
+  .investment-page .specifications-cost-price__item {
+    width: calc(100% / 2 - 20px);
+  }
+}
+@media only screen and (max-width: 375px) {
+  .business-page .specifications-cost-price__item,
+  .services-page .specifications-cost-price__item,
+  .investment-page .specifications-cost-price__item {
+    width: 100%;
+  }
 }
 .business-page .specifications-cost-price__item__title,
 .services-page .specifications-cost-price__item__title,
@@ -2432,6 +2785,9 @@ footer .container .socials a img {
   background-size: 100% 1px;
   background-position: 0 0, 0 100%;
   background-repeat: no-repeat;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .business-page .specifications-cost-price__item__value,
 .services-page .specifications-cost-price__item__value,
@@ -2446,6 +2802,13 @@ footer .container .socials a img {
   margin: 0 21px;
   position: relative;
   z-index: 1;
+}
+@media only screen and (max-width: 768px) {
+  .business-page .specifications-cost-price__item__value,
+  .services-page .specifications-cost-price__item__value,
+  .investment-page .specifications-cost-price__item__value {
+    font-size: 18px;
+  }
 }
 .business-page .specifications-cost-price__item__value small,
 .services-page .specifications-cost-price__item__value small,
@@ -2462,6 +2825,13 @@ footer .container .socials a img {
 .investment-page .transaction-cycle .title {
   padding: 0 71px;
 }
+@media only screen and (max-width: 980px) {
+  .business-page .transaction-cycle .title,
+  .services-page .transaction-cycle .title,
+  .investment-page .transaction-cycle .title {
+    padding: 0;
+  }
+}
 .business-page .transaction-cycle__list,
 .services-page .transaction-cycle__list,
 .investment-page .transaction-cycle__list {
@@ -2469,6 +2839,21 @@ footer .container .socials a img {
   display: flex;
   justify-content: space-between;
   padding: 0 71px;
+}
+@media only screen and (max-width: 768px) {
+  .business-page .transaction-cycle__list,
+  .services-page .transaction-cycle__list,
+  .investment-page .transaction-cycle__list {
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .business-page .transaction-cycle__list,
+  .services-page .transaction-cycle__list,
+  .investment-page .transaction-cycle__list {
+    padding: 0 0px;
+  }
 }
 .business-page .transaction-cycle__list__item,
 .services-page .transaction-cycle__list__item,
@@ -2479,6 +2864,31 @@ footer .container .socials a img {
   padding: 20px 5px;
   text-align: center;
   position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .business-page .transaction-cycle__list__item,
+  .services-page .transaction-cycle__list__item,
+  .investment-page .transaction-cycle__list__item {
+    width: 100%;
+    margin: 0 25%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .business-page .transaction-cycle__list__item,
+  .services-page .transaction-cycle__list__item,
+  .investment-page .transaction-cycle__list__item {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .business-page .transaction-cycle__list__item:last-child:after,
+  .services-page .transaction-cycle__list__item:last-child:after,
+  .investment-page .transaction-cycle__list__item:last-child:after,
+  .business-page .transaction-cycle__list__item:last-child:before,
+  .services-page .transaction-cycle__list__item:last-child:before,
+  .investment-page .transaction-cycle__list__item:last-child:before {
+    display: none;
+  }
 }
 .business-page .transaction-cycle__list__item:before,
 .services-page .transaction-cycle__list__item:before,
@@ -2493,6 +2903,26 @@ footer .container .socials a img {
   width: 55%;
   height: 1px;
 }
+@media only screen and (max-width: 980px) {
+  .business-page .transaction-cycle__list__item:before,
+  .services-page .transaction-cycle__list__item:before,
+  .investment-page .transaction-cycle__list__item:before {
+    width: 30%;
+    left: -20%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .business-page .transaction-cycle__list__item:before,
+  .services-page .transaction-cycle__list__item:before,
+  .investment-page .transaction-cycle__list__item:before {
+    left: 0;
+    right: 0;
+    height: 20px;
+    width: 1px;
+    bottom: -30px;
+    top: auto;
+  }
+}
 .business-page .transaction-cycle__list__item:after,
 .services-page .transaction-cycle__list__item:after,
 .investment-page .transaction-cycle__list__item:after {
@@ -2506,11 +2936,39 @@ footer .container .socials a img {
   width: 55%;
   height: 1px;
 }
+@media only screen and (max-width: 980px) {
+  .business-page .transaction-cycle__list__item:after,
+  .services-page .transaction-cycle__list__item:after,
+  .investment-page .transaction-cycle__list__item:after {
+    width: 30%;
+    right: -20%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .business-page .transaction-cycle__list__item:after,
+  .services-page .transaction-cycle__list__item:after,
+  .investment-page .transaction-cycle__list__item:after {
+    left: 0;
+    right: 0;
+    height: 20px;
+    width: 1px;
+    bottom: -82px;
+    top: auto;
+  }
+}
 .business-page .transaction-cycle__list__item__arrows,
 .services-page .transaction-cycle__list__item__arrows,
 .investment-page .transaction-cycle__list__item__arrows {
   display: flex;
   align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .business-page .transaction-cycle__list__item__arrows,
+  .services-page .transaction-cycle__list__item__arrows,
+  .investment-page .transaction-cycle__list__item__arrows {
+    transform: rotate(90deg);
+    margin: 30px auto 42px;
+  }
 }
 .business-page .transaction-cycle__list__item__title,
 .services-page .transaction-cycle__list__item__title,
@@ -2563,10 +3021,24 @@ footer .container .socials a img {
   margin-top: 35px;
   margin-bottom: 57px;
 }
+@media only screen and (max-width: 768px) {
+  .business-page .project-status,
+  .services-page .project-status,
+  .investment-page .project-status {
+    margin-bottom: 30px;
+  }
+}
 .business-page .project-status .title,
 .services-page .project-status .title,
 .investment-page .project-status .title {
   padding: 0 71px;
+}
+@media only screen and (max-width: 980px) {
+  .business-page .project-status .title,
+  .services-page .project-status .title,
+  .investment-page .project-status .title {
+    padding: 0;
+  }
 }
 .business-page .project-status__list,
 .services-page .project-status__list,
@@ -2575,6 +3047,21 @@ footer .container .socials a img {
   display: flex;
   justify-content: space-between;
   padding: 0 71px;
+}
+@media only screen and (max-width: 980px) {
+  .business-page .project-status__list,
+  .services-page .project-status__list,
+  .investment-page .project-status__list {
+    padding: 0 0px;
+    margin-top: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .business-page .project-status__list,
+  .services-page .project-status__list,
+  .investment-page .project-status__list {
+    flex-wrap: wrap;
+  }
 }
 .business-page .project-status__list__item,
 .services-page .project-status__list__item,
@@ -2587,6 +3074,28 @@ footer .container .socials a img {
   justify-content: center;
   width: calc(100% / 4 - 32px);
   position: relative;
+}
+@media only screen and (max-width: 1024px) {
+  .business-page .project-status__list__item,
+  .services-page .project-status__list__item,
+  .investment-page .project-status__list__item {
+    width: calc(100% / 4 - 20px);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .business-page .project-status__list__item,
+  .services-page .project-status__list__item,
+  .investment-page .project-status__list__item {
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .business-page .project-status__list__item,
+  .services-page .project-status__list__item,
+  .investment-page .project-status__list__item {
+    width: 100%;
+  }
 }
 .business-page .project-status__list__item.active,
 .services-page .project-status__list__item.active,
@@ -2608,7 +3117,7 @@ footer .container .socials a img {
 .investment-page .project-status__list__item.active:after {
   content: '';
   position: absolute;
-  left: -10px;
+  left: -12px;
   top: -12px;
   width: calc(100% + 20px);
   height: calc(100% + 24px);
@@ -2618,6 +3127,16 @@ footer .container .socials a img {
   background-size: 100% 2px;
   background-position: 0 0, 0 100%;
   background-repeat: no-repeat;
+}
+@media only screen and (max-width: 600px) {
+  .business-page .project-status__list__item.active:after,
+  .services-page .project-status__list__item.active:after,
+  .investment-page .project-status__list__item.active:after {
+    width: calc(100% + 12px);
+    left: -8px;
+    top: -8px;
+    height: calc(100% + 16px);
+  }
 }
 .business-page .project-status__list__item__number,
 .services-page .project-status__list__item__number,
@@ -2676,20 +3195,48 @@ footer .container .socials a img {
 .investment-page .project-status__list__item__number--left:before {
   left: -36px;
 }
+@media only screen and (max-width: 1280px) {
+  .business-page .project-status__list__item__number--left:before,
+  .services-page .project-status__list__item__number--left:before,
+  .investment-page .project-status__list__item__number--left:before {
+    left: -22px;
+  }
+}
 .business-page .project-status__list__item__number--left:after,
 .services-page .project-status__list__item__number--left:after,
 .investment-page .project-status__list__item__number--left:after {
   left: -18px;
+}
+@media only screen and (max-width: 1280px) {
+  .business-page .project-status__list__item__number--left:after,
+  .services-page .project-status__list__item__number--left:after,
+  .investment-page .project-status__list__item__number--left:after {
+    left: -12px;
+  }
 }
 .business-page .project-status__list__item__number--right:before,
 .services-page .project-status__list__item__number--right:before,
 .investment-page .project-status__list__item__number--right:before {
   right: -36px;
 }
+@media only screen and (max-width: 1280px) {
+  .business-page .project-status__list__item__number--right:before,
+  .services-page .project-status__list__item__number--right:before,
+  .investment-page .project-status__list__item__number--right:before {
+    right: -22px;
+  }
+}
 .business-page .project-status__list__item__number--right:after,
 .services-page .project-status__list__item__number--right:after,
 .investment-page .project-status__list__item__number--right:after {
   right: -18px;
+}
+@media only screen and (max-width: 1280px) {
+  .business-page .project-status__list__item__number--right:after,
+  .services-page .project-status__list__item__number--right:after,
+  .investment-page .project-status__list__item__number--right:after {
+    right: -12px;
+  }
 }
 .business-page .project-status__list__item__title,
 .services-page .project-status__list__item__title,
@@ -2698,6 +3245,8 @@ footer .container .socials a img {
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
+  width: 100%;
+  text-align: center;
 }
 .news-page .all-news {
   padding-top: 40px;
@@ -3270,6 +3819,11 @@ main {
   left: 0;
   display: block;
 }
+@media only screen and (max-width: 768px) {
+  .title--underline:after {
+    margin: 12px 0 18px 0;
+  }
+}
 .title a {
   font-size: 16px;
   color: #be9141;
@@ -3311,6 +3865,11 @@ main {
   font-weight: normal;
   font-size: 20px;
   line-height: 24px;
+}
+@media only screen and (max-width: 768px) {
+  .text {
+    font-size: 16px;
+  }
 }
 .top-block {
   height: 496px;
@@ -3355,6 +3914,12 @@ main {
 @media only screen and (max-width: 768px) {
   .top-block__title {
     font-size: 32px;
+    line-height: 1.2em;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .top-block__title {
+    font-size: 26px;
   }
 }
 .top-block__title:after {
@@ -3559,6 +4124,11 @@ main {
 .bottom-block__list__item--title {
   color: #fff;
   font-size: 16px;
+}
+@media only screen and (max-width: 480px) {
+  .bottom-block__list__item--title {
+    text-align: center;
+  }
 }
 .bottom-block__list__item--top {
   position: absolute;
@@ -3895,7 +4465,6 @@ main {
   background: #fff;
   display: inline-block;
   padding: 0 16px;
-  height: 47px;
   margin: 0 15px;
 }
 .investment-list__item--title span {
@@ -4792,13 +5361,45 @@ main {
   display: flex;
   padding-right: 7%;
 }
+@media only screen and (max-width: 1440px) {
+  .calculator__items {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .calculator__items {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
 .calculator__item {
   margin-top: 30px;
   width: calc(100% / 3 - 20px);
   margin-right: 30px;
 }
+@media only screen and (max-width: 1024px) {
+  .calculator__item {
+    width: calc(100% / 2 - 20px);
+    margin: 20px 0 0 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .calculator__item {
+    width: 100%;
+  }
+}
 .calculator__item.last {
   width: 20%;
+}
+@media only screen and (max-width: 1024px) {
+  .calculator__item.last {
+    width: calc(100% / 2 - 20px);
+  }
+}
+@media only screen and (max-width: 480px) {
+  .calculator__item.last {
+    width: 100%;
+  }
 }
 .calculator__item__label {
   font-weight: 500;
@@ -4856,6 +5457,27 @@ main {
   margin-top: 30px;
   width: 70%;
 }
+@media only screen and (max-width: 1024px) {
+  .calculator__result {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .calculator__result {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .calculator__result__item {
+    width: calc(100% / 2 - 20px);
+  }
+}
+@media only screen and (max-width: 480px) {
+  .calculator__result__item {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
 .calculator__result__label {
   font-size: 16px;
   line-height: 20px;
@@ -4871,6 +5493,11 @@ main {
 }
 .calculator__result .btn--gold {
   height: 42px;
+}
+@media only screen and (max-width: 768px) {
+  .calculator__result .btn--gold {
+    margin: 15px 0 0 0;
+  }
 }
 /*# sourceMappingURL=src/stylus/style.css.map *//*
  * jQuery UI CSS Framework 1.12.1
