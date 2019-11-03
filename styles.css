@@ -775,11 +775,11 @@ header .container .dropdown-menu nav ul li {
   flex-wrap: wrap;
   justify-content: center;
 }
+header .container .dropdown-menu nav ul li.active .submenu {
+  display: block;
+}
 header .container .dropdown-menu nav ul li:hover a {
   background: none;
-}
-header .container .dropdown-menu nav ul li:hover .submenu {
-  display: block;
 }
 header .container .dropdown-menu nav ul li .submenu {
   position: static;
