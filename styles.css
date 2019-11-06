@@ -5848,7 +5848,17 @@ main {
 @media only screen and (max-width: 1280px) {
   .map {
     position: relative !important;
-    height: 40vw;
+    height: 50vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .map {
+    height: 65vw;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .map {
+    height: 85vw;
   }
 }
 .map-info {
