@@ -5835,7 +5835,22 @@ main {
 @media only screen and (max-width: 1280px) {
   .our-offices-page {
     height: auto;
+  }
+}
+.our-offices-page .container {
+  width: 100%;
+  display: flex;
+  padding: 0;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+}
+@media only screen and (max-width: 1280px) {
+  .our-offices-page .container {
+    width: 100%;
+    max-width: 100%;
     flex-direction: column-reverse;
+    justify-content: center;
   }
 }
 .map {
