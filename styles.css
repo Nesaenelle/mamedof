@@ -5887,7 +5887,7 @@ main {
 }
 @media only screen and (max-height: 880px) {
   .map-info {
-    width: 790px;
+    width: 720px;
   }
 }
 @media only screen and (max-width: 1440px) {

@@ -185,7 +185,7 @@
       
       function initMap() {
       	map = new google.maps.Map(document.getElementById('map'), {
-      		center: { lat:46.4738, lng: 30.7491},
+      		center: { lat:46.4738, lng: 30.75},
       		zoom: 18,
       		disableDefaultUI: true,
       		scaleControl: false,
@@ -204,15 +204,33 @@
       	//- };
       
       	var marker = new google.maps.Marker({
-      		position: { lat:46.47382, lng: 30.74913},
+      		//- position: { lat:46.47382, lng: 30.749135},
       		map: map,
       		title: 'Hello World!',
       		//- icon: icon
       	});
       
+      	function resize(){
+      		if(window.innerWidth >= 1280){
+      			var latlng = new google.maps.LatLng(46.474, 30.745);
+      			var mLatLang = new google.maps.LatLng(46.47402, 30.74418);
+      		} else {
+      			var latlng = new google.maps.LatLng(46.4738, 30.7491);
+      			var mLatLang = new google.maps.LatLng(46.47383, 30.749134);
+      		}
+      		map.setCenter(latlng);
+      		marker.setPosition(mLatLang);
+      	}
+      
+      	resize();
+      	window.onresize = function() {
+      		resize();
+      	};
+      
       	marker.addListener('click', function() {
       		infowindow.open(map, marker);
       	});
+      
       }
     </script>
     <div class="overlay"></div>
