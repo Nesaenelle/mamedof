@@ -4990,6 +4990,11 @@ main {
     font-size: 20px;
   }
 }
+@media only screen and (max-height: 900px) {
+  .form-section.form-section--map .title {
+    font-size: 30px;
+  }
+}
 @media only screen and (max-height: 880px) {
   .form-section.form-section--map .title {
     font-size: 22px;
@@ -5000,6 +5005,11 @@ main {
 }
 .form-section.form-section--map form {
   margin-top: 35px;
+}
+@media only screen and (max-height: 900px) {
+  .form-section.form-section--map form {
+    margin-top: 25px;
+  }
 }
 @media only screen and (max-width: 480px) {
   .form-section.form-section--map form {
@@ -5921,11 +5931,17 @@ main {
   font-weight: 500;
   font-size: 28px;
   line-height: 37px;
+  display: block;
+}
+@media only screen and (max-height: 990px) {
+  .map-info__phone {
+    font-size: 24px;
+    line-height: 1.1em;
+  }
 }
 @media only screen and (max-height: 880px) {
   .map-info__phone {
     font-size: 18px;
-    line-height: 1.1em;
     display: inline-block;
     margin-right: 15px;
   }
@@ -5934,6 +5950,7 @@ main {
   .map-info__phone {
     font-size: 20px;
     line-height: 1.1em;
+    display: block;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -5946,11 +5963,17 @@ main {
   font-size: 28px;
   line-height: 37px;
   margin-top: 4px;
+  display: block;
+}
+@media only screen and (max-height: 900px) {
+  .map-info__email {
+    font-size: 24px;
+    line-height: 1.1em;
+  }
 }
 @media only screen and (max-height: 880px) {
   .map-info__email {
     font-size: 18px;
-    line-height: 1.1em;
     display: inline-block;
     margin-right: 15px;
   }
@@ -5959,6 +5982,7 @@ main {
   .map-info__email {
     font-size: 20px;
     line-height: 1.1em;
+    display: block;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -5970,11 +5994,17 @@ main {
   font-size: 24px;
   line-height: 32px;
   margin-top: 4px;
+  display: block;
+}
+@media only screen and (max-height: 900px) {
+  .map-info__address {
+    font-size: 22px;
+    line-height: 1.1em;
+  }
 }
 @media only screen and (max-height: 880px) {
   .map-info__address {
     font-size: 18px;
-    line-height: 1.1em;
     display: inline-block;
     margin-right: 15px;
   }
@@ -5983,6 +6013,7 @@ main {
   .map-info__address {
     font-size: 20px;
     line-height: 1.1em;
+    display: block;
   }
 }
 @media only screen and (max-width: 480px) {
